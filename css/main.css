@@ -733,19 +733,19 @@ footer i:hover,
   }
 
   .hero-content-side1 {
-    width: 50%;
+    width: 40%;
   }
 
   .hero-content-side2 {
-    width: 50%;
+    width: 60%;
     align-self: flex-end;
     text-transform: uppercase;
   }
 
   .hero-content-side2 p {
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .hero-content-side2 span {
@@ -778,6 +778,28 @@ footer i:hover,
 
   .copyright .span {
     font-size: 1.125rem;
+  }
+}
+
+/* ================================================================
+      LARGE DESKTOP MEDIA QUERY
+  ====================================================================*/
+
+@media only screen and (min-width: 1900px) {
+  .hero-content {
+    padding-top: 150px;
+  }
+
+  .hero-content-side2 p {
+    font-size: 40px;
+  }
+
+  .keynote-speaker {
+    margin: 0 50px;
+  }
+
+  .keynote-speaker figure {
+    margin-right: 0;
   }
 }
 
