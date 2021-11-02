@@ -53,7 +53,7 @@
             <ul>
               <li><a href="index.html" class="home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#speaking">Speaking</a></li>
+              <li><a href="#keynote-speaker">Speaking</a></li>
               <li><a href="#videos">Videos</a></li>
               <li><a href="#articles">Articles</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -62,6 +62,25 @@
         </div>
       </div>
     </header>
+
+    <!----------------------------------------------------------------- 
+                         MOBILE HAMBURGER NAV MENU
+    ----------------------------------------------------------------->
+    <div class="topnav">
+      <a href="#home" class="active">Jessica Weiss</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#about">About</a>
+        <a href="#keynote-speaker">Speaking</a>
+        <a href="#videos">Videos</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <!----------------------------------------------------------------- 
                          HERO 
     ----------------------------------------------------------------->
@@ -108,14 +127,14 @@
       <!----------------------------------------------------------------- 
                          KEYNOTE SPEAKER 
 ------------------------------------------------------------------>
-      <section class="keynote-speaker">
-        <div class="side-one">
+      <section class="keynote-speaker" id="keynote-speaker">
+        <div class="keynote-speaker-img">
           <figure>
             <img src="img/pexels-grayscale.jpg" alt="self-portrait" />
           </figure>
         </div>
 
-        <div class="side-two">
+        <div class="keynote-speaker-text">
           <h2>Keynote Speaker</h2>
           <p class="p1">
             As a keynote speaker, Jessica brings out the potential in everybody,
@@ -124,7 +143,7 @@
             at work and in life.
           </p>
           <h3>Speaking Topics</h3>
-          <ul>
+          <ul class="speaking-topics-list">
             <li>
               Theory of Creativity – How to get off Auto Pilot and Find the
               Freedom to be Brave.
@@ -157,7 +176,8 @@
             <img src="img/pfizer.png" alt="Pfizer logo" class="logo2" />
           </li>
           <li>
-            <i class="fab fa-cc-amex fa-6x"></i>
+            <i class="fab fa-cc-amex fa-6x amex-desktop"></i>
+            <i class="fab fa-cc-amex fa-2x amex-mobile"></i>
           </li>
           <li>
             <img src="img/hasbro_logo.svg.png" alt="Hasbro logo" />
@@ -185,34 +205,6 @@
         </ul>
       </section>
 
-      <!----------------------------------------------------------------- 
-                         SPEAKING TOPICS  
-    ----------------------------------------------------------------->
-      <!-- <section class="speaking" id="speaking">
-        <div class="wrapper">
-          <h3>Speaking Topics</h3>
-          <div class="speaking-div">
-            <ul class="speaking-topics">
-              <li>
-                Theory of Creativity – How to get off Auto Pilot and Find the
-                Freedom to be Brave.
-              </li>
-              <li>
-                Corporate innovation - Bringing an Entrepreneurial Mindset to
-                Your organizations.
-              </li>
-              <li>
-                The Art of the Career Pivot – Finding your Zone of Genius. How
-                to find the time and motivation to continually grow in your
-                career and life.
-              </li>
-            </ul>
-            <a href="#contact"
-              ><button class="btn">Book Jessica to Speak</button></a
-            >
-          </div>
-        </div>
-      </section> -->
       <!----------------------------------------------------------------- 
                          ABOUT 
     ----------------------------------------------------------------->
@@ -284,10 +276,16 @@
             <h4>Social</h4>
             <ul>
               <li>
-                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/jessiweiss" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/jessicaweiss7/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
               </li>
               <li>
                 <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -300,5 +298,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
