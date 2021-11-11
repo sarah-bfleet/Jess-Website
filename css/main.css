@@ -232,6 +232,12 @@ Mobile Nav
 .active {
   background-color: #fff;
   color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+a.active {
+  font-size: 20px;
 }
 /**********************************
 Hero Section  
