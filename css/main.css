@@ -256,7 +256,7 @@ Hero Section
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url("../img/crowd.jpg") no-repeat;
+  background: url("../img/openpic.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
 
@@ -748,7 +748,8 @@ footer i:hover,
   .about .content-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
   }
 
   .about h3 {
@@ -759,14 +760,30 @@ footer i:hover,
     margin-top: 0;
   }
 
-  .about figure {
-    width: 50%;
-    margin: 0 10px 0 0;
+  .about-pics {
+    display: flex;
+  }
+
+  .about-pic {
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+  }
+
+  .about-pic1 {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+  }
+
+  .about img {
+    width: 250px;
   }
 
   .about-text {
     margin-left: 60px;
     width: 50%;
+    position: relative;
   }
 
   .contact {
