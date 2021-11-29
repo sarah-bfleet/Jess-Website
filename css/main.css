@@ -119,7 +119,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 
 h3 {
@@ -236,7 +236,6 @@ Hero Section
 
 .hero {
   position: relative;
-  height: 100vh;
 }
 
 .hero::before {
@@ -246,11 +245,10 @@ Hero Section
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url("../img/openpic.jpeg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+  background: url("../img/mobilehero.jpg") no-repeat;
+  /* height: 100%; */
   z-index: -2;
+  background-color: #000;
 }
 
 .hero::after {
@@ -265,8 +263,7 @@ Hero Section
 }
 
 .hero-content {
-  padding-top: 70px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .hero-content-side2 span {
@@ -276,18 +273,22 @@ Hero Section
 
 .hero-content p {
   text-transform: uppercase;
-  margin-top: 60px;
-  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  padding: 20px 0 30px;
 }
 
 .hero h1 {
   margin-top: 0;
+  font-size: 18px;
+  padding-top: 60px;
+  font-weight: bold;
 }
 
 .btn {
-  font-size: 1.25rem;
-  padding: 15px 35px;
-  border: 1px solid white;
+  font-size: 0.75rem;
+  padding: 10px 25px;
   border-radius: 25px;
   color: black;
   background-color: #fdd923;
@@ -303,7 +304,12 @@ Hero Section
 
 .hero-btn {
   border: 2.5px solid #fdd923;
+  font-weight: bold;
 }
+
+/**********************************
+    MAIN 
+***********************************/
 
 .opening-statement {
   background-color: #fdd923;
@@ -316,18 +322,26 @@ Hero Section
 }
 
 .opening-statement h2 {
-  font-size: 45px;
-  font-size: 30px;
+  /* font-size: 45px;
+  font-size: 30px; */
+  font-size: 35px;
   font-weight: normal;
   width: 70%;
+  width: 90%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.opening-statement p {
+.openp1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.openp2 {
   font-size: 45px;
   font-size: 30px;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -339,47 +353,74 @@ Hero Section
   font-style: italic;
 }
 
+.opening-statement-btn,
+.keynote-btn {
+  font-size: 1.25rem;
+  padding: 15px 35px;
+}
+
 .opening-statement-btn {
   margin-top: 20px;
   background-color: #000;
   color: #fff;
-  outline: none;
+  border: none;
 }
 
 .keynote-speaker {
   margin: 0 10px;
+  margin-top: 30px;
+  padding: 40px 0 70px;
 }
 
 .keynote-speaker-text {
   color: #000;
-  font-size: 12px;
+  font-size: 18px;
   margin: 0 15px;
 }
 
-.keynote-speaker-text h2,
-.keynote-speaker-text h3 {
-  font-size: 20px;
-  font-weight: 300;
+.keynote-speaker-text h2 {
+  /* font-size: 30px; */
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.speaking-topics-list {
-  list-style-position: inside;
+.keynote-speaker img {
+  width: 100%;
+}
+
+.keynote-btn {
+  margin-top: 0;
+  border: none;
+}
+
+.keynote-btn:hover {
+  cursor: pointer;
+  border: 2px solid #fdd923;
+  color: #000;
+}
+
+.speaking-topics {
+  background-color: #f7f7f7;
+  color: black;
+  padding: 10px 0 70px;
 }
 
 .speaking-topics-list li {
-  font-size: 14px;
+  font-size: 18px;
+  list-style-type: disc;
+}
+
+.speaking-topics-div2 {
+  margin: 35px 22px 25px;
+}
+
+.speaking-topic {
+  font-weight: bold;
 }
 
 .p1 {
   font-size: 18px;
   margin-bottom: 40px;
-}
-
-.keynote-btn:hover {
-  cursor: pointer;
-  border: 1.5px solid #fdd923;
-  color: #000;
 }
 
 .company-logos {
@@ -416,6 +457,9 @@ Hero Section
   padding: 40px 0;
   color: #000;
   background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .about .wrapper {
@@ -429,6 +473,7 @@ Hero Section
 
 .about img {
   border: 2px solid white;
+  width: 100%;
 }
 
 .about-text {
@@ -437,49 +482,15 @@ Hero Section
 }
 
 .about h3 {
-  margin-left: 15px;
-}
-
-/********************************************
-                   SPEAKING 
-*********************************************/
-
-.speaking {
-  background-color: #000;
-  padding-bottom: 60px;
-}
-
-.speaking-topics li {
-  font-size: 20px;
-  list-style-type: disc;
-  text-align: left;
-}
-
-.speaking p {
-  text-align: center;
-  font-size: 26px;
-  padding: 30px;
-  margin: 50px 0 0;
-  border-radius: 4px;
-}
-
-.speaking h3 {
-  color: white;
-}
-
-.speaking h3 {
-  margin-bottom: 50px;
+  /* margin-left: 15px; */
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 /********************************************
                    VIDEOS & ARTICLES  
 *********************************************/
-
-.videos-articles {
-  height: 400px;
-  background-color: #f4f5f5;
-  color: #000;
-}
 
 /********************************************
                    FOOTER
@@ -491,21 +502,10 @@ footer {
   text-align: center;
 }
 
-footer h3 {
-  margin-bottom: 20px;
-}
-
-footer h4 {
-  margin-bottom: 15px;
-}
-
-footer p {
-  margin: 0;
-  color: #fdd923;
-}
-
 .contact p {
   color: white;
+  margin: 0 10px;
+  font-size: 16px;
 }
 
 footer span {
@@ -531,23 +531,25 @@ footer i {
 }
 
 footer i:hover,
-.hire a:hover {
+footer a:hover {
   color: white;
 }
 
-.hire,
 .follow {
   margin: 30px 0 50px;
 }
 
-.hire a {
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: #fdd923;
+.contact-email {
+  margin-top: 25px;
 }
 
-.hire p {
-  font-weight: bold;
+.contact-email a {
+  color: #fdd923;
+  font-size: 18px;
+}
+
+.copyright {
+  margin-top: 15px;
 }
 
 /* ==========================================================================
@@ -641,9 +643,11 @@ footer i:hover,
 @media only screen and (min-width: 768px) {
   /* General styles */
 
-  /* .wrapper {
-    padding: 70px 0;
-  } */
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
   header {
     display: block;
@@ -655,6 +659,10 @@ footer i:hover,
     font-weight: 700;
     font-size: 3.5rem;
     margin: 0;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 20px;
   }
 
   header h2 {
@@ -669,41 +677,105 @@ footer i:hover,
     display: none;
   }
 
-  .hero-btn {
-    margin-top: 20px;
+  .header-wrapper {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .speaking-topics {
-    padding: 30px 0;
+  .navbar {
+    margin-right: 20px;
   }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  .hero-btn {
+    margin-top: 50px;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero::before {
+    background: url("../img/openpic.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: top;
+    opacity: 1;
+  }
+
+  .hero h1 {
+    margin-top: 0;
+    font-size: 30px;
+    width: 75%;
+    text-align: left;
+    padding-top: 40px;
+  }
+
+  .hero-content p {
+    margin-top: 100px;
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .hero-content {
+    padding-top: 70px;
+    margin-left: 30px;
+  }
+
+  .keynote-speaker {
+    padding: 50px 0;
+  }
+
   .keynote-speaker,
   .speaking-topics-div {
     display: flex;
-    align-items: center;
-    margin: 0 40px;
+    margin: 0 20px;
   }
 
+  .keynote-speaker-text h2,
   .speaking-topics h2 {
-    padding-left: 40px;
-    text-transform: uppercase;
-    font-size: 45px;
-    margin-top: 0;
-  }
-
-  .keynote-speaker img {
-    width: 524px;
-    height: 740px;
-    margin-left: 40px;
-  }
-
-  .keynote-speaker-text {
-    margin: 0 40px;
+    font-size: 35px;
   }
 
   .keynote-speaker-text h2 {
-    font-size: 20px;
     margin-bottom: 40px;
   }
+
+  .speaking-topics h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  .speaking-topics-div2 {
+    margin: 0;
+  }
+
+  .speaking-topics {
+    padding: 70px 0;
+  }
+
+  .speaking-topics img {
+    width: 50%;
+  }
+  /* COMPANY LOGOS */
 
   .company-logos {
     padding: 20px 0 50px;
@@ -734,15 +806,8 @@ footer i:hover,
     padding: 70px 0;
   }
 
-  .about .content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-
   .about h3 {
-    margin-bottom: 50px;
+    margin: 40px 0;
     font-size: 40px;
   }
 
@@ -750,47 +815,35 @@ footer i:hover,
     margin-top: 0;
   }
 
-  .about-pic1 {
-    width: 527px;
-    height: 740px;
-  }
-
-  .about-text {
-    margin-left: 60px;
-    width: 50%;
-    position: relative;
-  }
+  /* .about-pic1 {
+    width: 400px;
+  } */
 
   /* FOOTER */
 
-  .footer-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .footer-flex {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-  }
-
-  .follow {
-    margin-left: 120px;
   }
 
   .contact-email a {
-    color: #fdd923;
-    font-size: 20px;
+    font-size: 25px;
   }
 
-  footer p {
-    font-size: 28px;
+  .contact-email {
+    margin: 50px 0 30px;
   }
 
   #contact {
     padding: 0 40px;
+  }
+
+  .contact p {
+    color: white;
+    margin: 0 10px;
+    font-size: 28px;
   }
 }
 
@@ -815,17 +868,8 @@ footer i:hover,
     margin: 0 auto;
   }
 
-  .header-wrapper {
-    padding: 12px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .logo {
     font-size: 40px;
-    color: #000;
-    text-transform: uppercase;
     margin-left: 40px;
   }
 
@@ -833,30 +877,13 @@ footer i:hover,
     margin-right: 40px;
   }
 
-  nav ul {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 0 10px;
-    font-size: 20px;
-  }
-
   .home {
     margin-right: auto;
   }
 
-  .hero::before {
-    height: 100%;
-    background-attachment: fixed;
-    background-position: top;
-  }
-
   .hero h1 {
-    margin-top: 0;
     font-size: 40px;
-    width: 75%;
-    text-align: left;
+    padding-top: 0;
   }
 
   .hero-content {
@@ -880,29 +907,60 @@ footer i:hover,
     margin: 0;
   }
 
-  .opening-statement h2,
-  .opening-statement p {
+  .hero-btn {
+    margin-top: 20px;
+    font-weight: normal;
+  }
+
+  .opening-statement h2 {
+    font-size: 50px;
+  }
+
+  .openp1 {
+    font-size: 30px;
+    font-size: 34px;
+  }
+
+  .openp2 {
     font-size: 45px;
+    font-size: 28px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* KEYNOTE SPEAKER & SPEAKING TOPICS */
+
+  .keynote-speaker img {
+    margin-left: 40px;
+    /* width: 30%; */
+    width: 400px;
+  }
+
+  .keynote-speaker-text {
+    margin: 0 0 0 50px;
+    width: 45%;
   }
 
   .keynote-speaker {
-    padding: 30px 0;
+    padding: 70px 30px;
+  }
+
+  .keynote-speaker-text h2,
+  .speaking-topics h2 {
+    font-size: 45px;
   }
 
   .keynote-speaker h2 {
-    font-size: 45px;
     margin-bottom: 20px;
-    font-weight: bold;
     margin-top: 0;
   }
 
   .keynote-speaker li {
     font-size: 18px;
-  }
-
-  .speaking-topic {
-    font-weight: bold;
-    font-size: 24px;
   }
 
   .keynote-speaker .p1 {
@@ -911,27 +969,72 @@ footer i:hover,
     width: 95%;
   }
 
+  .keynote-speaker,
+  .speaking-topics-div {
+    margin: 0 40px;
+  }
+
   .speaking,
   .about,
   .videos-articles {
     padding-top: 45px;
   }
 
-  .speaking-topics {
-    background-color: #f7f7f7;
-    color: black;
+  .speaking-topics-div {
+    padding: 30px 60px;
   }
 
   .speaking-topics li {
     font-size: 24px;
   }
 
+  .speaking-topics-list {
+    width: 70%;
+  }
+
+  .speaking-topic {
+    font-size: 24px;
+  }
+
+  /* ABOUT */
+
+  .about .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .about-text {
+    margin-left: 60px;
+    width: 60%;
+    position: relative;
+  }
+
   .about h3 {
     font-size: 50px;
   }
 
+  .about h3 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+
+  /* FOOTER */
+
+  .footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .footer-text {
     padding: 20px 0 30px;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    margin-top: 20px;
   }
 
   footer h4 {
@@ -946,8 +1049,12 @@ footer i:hover,
     font-size: 1.125rem;
   }
 
-  .footer-p1 {
-    font-size: 30px;
+  .follow {
+    margin-left: 120px;
+  }
+
+  .contact-email {
+    margin-top: 0;
   }
 }
 
