@@ -418,9 +418,13 @@ Hero Section
   font-weight: bold;
 }
 
+.speaking-topics button {
+  margin-top: 40px;
+}
+
 .p1 {
   font-size: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .company-logos {
@@ -790,7 +794,7 @@ COMING SOON PAGES
   }
 
   .keynote-speaker-text h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .speaking-topics h2 {
@@ -1020,6 +1024,8 @@ COMING SOON PAGES
   .keynote-speaker .p1 {
     font-size: 24px;
     margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 95%;
   }
 
@@ -1071,12 +1077,8 @@ COMING SOON PAGES
   }
 
   .about h3 {
-    font-size: 50px;
-  }
-
-  .about h3 {
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
     font-size: 50px;
   }
 
