@@ -322,8 +322,6 @@ Hero Section
 }
 
 .opening-statement h2 {
-  /* font-size: 45px;
-  font-size: 30px; */
   font-size: 35px;
   font-weight: normal;
   width: 70%;
@@ -367,8 +365,12 @@ Hero Section
 }
 
 .keynote-speaker {
+  background-color: #f7f7f7;
+}
+
+.keynote-speaker-div {
   margin: 0 10px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   padding: 40px 0 70px;
 }
 
@@ -400,7 +402,6 @@ Hero Section
 }
 
 .speaking-topics {
-  background-color: #f7f7f7;
   color: black;
   padding: 10px 0 70px;
 }
@@ -425,6 +426,36 @@ Hero Section
 .p1 {
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+.results {
+  color: #000;
+  background-color: #f7f7f7;
+  padding: 20px 0 40px;
+}
+
+.results h2 {
+  text-align: center;
+}
+
+.result {
+  background-color: #000;
+  color: #fdd923;
+  padding: 45px 35px;
+  border: 3px solid #fdd923;
+  border-radius: 50%;
+  text-align: center;
+  height: 160px;
+  width: 250px;
+}
+
+.result h3 {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.result4 p {
+  margin: 0;
 }
 
 .company-logos {
@@ -493,8 +524,32 @@ Hero Section
 }
 
 /********************************************
-                   VIDEOS & ARTICLES  
+                   WORK WITH
 *********************************************/
+
+.work-with {
+  color: #000;
+  text-align: center;
+  padding: 30px 0 80px;
+}
+
+.work {
+  background-color: #000;
+  color: #fff;
+  padding: 45px 35px;
+  border: 3px solid #fdd923;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.work h3 {
+  text-transform: capitalize;
+}
 
 /********************************************
                    FOOTER
@@ -686,12 +741,16 @@ COMING SOON PAGES
     margin-left: 20px;
   }
 
+  h2 {
+    font-size: 35px;
+  }
+
   header h2 {
     font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
   .topnav {
@@ -782,7 +841,7 @@ COMING SOON PAGES
     padding: 50px 0;
   }
 
-  .keynote-speaker,
+  .keynote-speaker-div,
   .speaking-topics-div {
     display: flex;
     margin: 0 20px;
@@ -819,6 +878,43 @@ COMING SOON PAGES
 
   .speaking-topics img {
     width: 50%;
+  }
+
+  .results {
+    padding: 20px 0 60px;
+  }
+
+  .result {
+    padding: 45px 35px;
+    margin: 10px 70px;
+    height: 250px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .result h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .results-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work {
+    margin: 10px 20px;
+    width: 50%;
+    height: 200px;
+  }
+
+  .work-with-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   /* COMPANY LOGOS */
 
@@ -897,8 +993,12 @@ COMING SOON PAGES
   ====================================================================*/
 
 @media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 45px;
+  }
+
   h3 {
-    font-size: 2.75rem;
+    font-size: 30px;
     text-transform: uppercase;
   }
 
@@ -1007,11 +1107,6 @@ COMING SOON PAGES
     padding: 70px 30px;
   }
 
-  .keynote-speaker-text h2,
-  .speaking-topics h2 {
-    font-size: 45px;
-  }
-
   .keynote-speaker h2 {
     margin-bottom: 20px;
     margin-top: 0;
@@ -1029,7 +1124,7 @@ COMING SOON PAGES
     width: 95%;
   }
 
-  .keynote-speaker,
+  .keynote-speaker-div,
   .speaking-topics-div {
     margin: 0 40px;
   }
@@ -1061,6 +1156,19 @@ COMING SOON PAGES
     font-size: 24px;
   }
 
+  .work-with {
+    padding: 30px 0 130px;
+  }
+
+  .work-with-div {
+    margin: 0 70px;
+    flex-direction: row;
+  }
+
+  .work {
+    width: 30%;
+    height: 252px;
+  }
   /* ABOUT */
 
   .about .content-wrapper {
