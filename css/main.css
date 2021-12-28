@@ -462,7 +462,7 @@ Hero Section
 }
 
 .company-logos {
-  padding: 20px 0 50px;
+  padding: 20px 0;
 }
 
 .company-logos img {
@@ -485,6 +485,27 @@ Hero Section
 .jnj-logo,
 .lvmh-logo {
   background-color: gray;
+}
+
+.as-seen-in {
+  color: #000;
+  text-align: center;
+}
+
+.as-seen-in h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.as-seen-in-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.as-seen-in-list li {
+  margin: 0 40px;
 }
 
 /********************************************
@@ -890,7 +911,7 @@ COMING SOON PAGES
 
   .result {
     padding: 45px 35px;
-    margin: 10px 70px;
+    margin: 10px 30px;
     height: 250px;
     width: 380px;
     display: flex;
@@ -905,8 +926,6 @@ COMING SOON PAGES
 
   .results-div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .work {
