@@ -332,19 +332,17 @@ Hero Section
 }
 
 .openp1 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
+  font-weight: bold;
 }
 
 .openp2 {
-  font-size: 45px;
-  font-size: 30px;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 20px 10px 15px;
 }
 
 .opening-statement span {
@@ -390,8 +388,8 @@ Hero Section
   width: 100%;
 }
 
-.keynote-btn {
-  margin-top: 0;
+.btn.keynote-btn {
+  margin: 0 0 30px;
   border: none;
 }
 
@@ -406,6 +404,11 @@ Hero Section
   padding: 10px 0 70px;
 }
 
+.speaking-topics-intro {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
 .speaking-topics-list li {
   font-size: 18px;
   list-style-type: disc;
@@ -415,12 +418,71 @@ Hero Section
   margin: 35px 22px 25px;
 }
 
+.speaking-topics-div2 {
+  margin: 0 22px 25px;
+}
+
 .speaking-topic {
   font-weight: bold;
 }
 
 .speaking-topics button {
   margin-top: 40px;
+}
+
+.speaking-topics h3 {
+  text-decoration: underline;
+}
+
+.speaking-topics-img {
+  display: none;
+}
+
+.speaking-topics-img-tablet {
+  width: 100%;
+  display: block;
+}
+
+.learning-outcomes {
+  margin: 30px 0 70px;
+}
+
+.learning-outcomes h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.learning-outcomes ul {
+  list-style-type: disc;
+}
+
+.learning-outcomes li {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.collapsible {
+  cursor: pointer;
+  display: inline;
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+
+.collapsible:after {
+  color: black;
+  font-size: 25px;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 .p1 {
@@ -461,8 +523,18 @@ Hero Section
   margin: 0;
 }
 
+.logo-h2 {
+  font-size: 20px;
+}
+
 .company-logos {
   padding: 20px 0;
+}
+
+.company-logos h2 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .company-logos img {
@@ -862,12 +934,19 @@ COMING SOON PAGES
     text-align: right;
   } */
 
+  .openp1 {
+    font-size: 32px;
+  }
+
+  .openp2 {
+    font-size: 25px;
+  }
+
   .keynote-speaker {
     padding: 50px 0;
   }
 
-  .keynote-speaker-div,
-  .speaking-topics-div {
+  .keynote-speaker-div {
     display: flex;
     margin: 0 20px;
   }
@@ -883,9 +962,9 @@ COMING SOON PAGES
 
   .speaking-topics h2 {
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 30px;
   }
-  .speaking-topics-div2,
+
   .keynote-speaker-text {
     margin: 0;
     display: flex;
@@ -901,12 +980,15 @@ COMING SOON PAGES
     padding: 70px 0;
   }
 
-  .speaking-topics img {
-    width: 50%;
+  .speaking-topics-img {
+    display: none;
   }
 
   .results {
     padding: 20px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .result {
@@ -917,15 +999,12 @@ COMING SOON PAGES
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .result h3 {
     font-size: 30px;
     margin-bottom: 15px;
-  }
-
-  .results-div {
-    display: flex;
   }
 
   .work {
@@ -964,6 +1043,9 @@ COMING SOON PAGES
     display: none;
   }
 
+  .logo-h2 {
+    font-size: 30px;
+  }
   /* ABOUT */
 
   .about {
@@ -1054,13 +1136,10 @@ COMING SOON PAGES
   }
 
   .hero::before {
-    background: url("../img/openpic.jpeg") no-repeat;
+    background: url("../img/hero-img.jpeg") no-repeat fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: top;
-    opacity: 1;
   }
+
   .hero h1 {
     font-size: 40px;
     padding-top: 0;
@@ -1098,8 +1177,8 @@ COMING SOON PAGES
   }
 
   .openp1 {
-    font-size: 30px;
-    font-size: 34px;
+    font-size: 40px;
+    text-transform: uppercase;
   }
 
   .openp2 {
@@ -1150,6 +1229,7 @@ COMING SOON PAGES
   .keynote-speaker-div,
   .speaking-topics-div {
     margin: 0 40px;
+    display: flex;
   }
 
   .speaking,
@@ -1162,21 +1242,77 @@ COMING SOON PAGES
     padding: 30px 60px;
   }
 
-  .speaking-topics-div2,
+  /* .speaking-topics-div2,
   .keynote-speaker img {
     margin-left: 120px;
+  } */
+
+  .keynote-speaker img {
+    margin-left: 120px;
+  }
+
+  .speaking-topics-img {
+    align-self: flex-start;
+    width: 50%;
+    display: block;
+  }
+
+  .speaking-topics-img-tablet {
+    display: none;
   }
 
   .speaking-topics li {
     font-size: 24px;
   }
 
-  .speaking-topics-list {
-    width: 80%;
+  .speaking-topics h2 {
+    font-size: 45px;
+    margin-top: 0;
   }
+
+  .speaking-topics-div2 h3 {
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+    font-size: 30px;
+  }
+
+  .speaking-topics h4 {
+    font-size: 25px;
+  }
+
+  .speaking-topics p {
+    font-size: 18px;
+  }
+
+  /* .speaking-topics-list {
+    width: 80%;
+  } */
 
   .speaking-topic {
     font-size: 24px;
+  }
+
+  .speaking-topics-intro {
+    width: 82%;
+  }
+
+  .learning-outcomes {
+    margin: 10px 0 50px;
+  }
+
+  .learning-outcomes h5 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .learning-outcomes li {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .results-div {
+    display: flex;
   }
 
   .work-with {
@@ -1213,12 +1349,20 @@ COMING SOON PAGES
     font-size: 50px;
   }
 
+  .logo-h2 {
+    font-size: 35px;
+  }
+
+  .as-seen-in img {
+    width: 200px;
+  }
+
   /* FOOTER */
 
   .footer-div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer-text {
     padding: 20px 0 30px;
