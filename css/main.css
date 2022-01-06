@@ -817,6 +817,27 @@ COMING SOON PAGES
 
 /* ====================================
   ======================================
+       Media Queries - 
+     =======================================
+     =================================== */
+
+@media only screen and (min-width: 500px) {
+  /* General styles */
+
+  .hero {
+    height: 70vh;
+    padding-bottom: 150px;
+  }
+
+  .hero::before {
+    background: url("../img/tabletopenpic.jpg") no-repeat;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/* ====================================
+  ======================================
        Media Queries - TABLET 
      =======================================
      =================================== */
@@ -899,11 +920,6 @@ COMING SOON PAGES
     height: 50vh;
   }
 
-  .hero::before {
-    background: url("../img/tabletopenpic.jpg") no-repeat;
-    background-color: #000;
-    background-size: cover;
-  }
   .hero h1 {
     margin-top: 50px;
     font-size: 30px;
@@ -1110,7 +1126,43 @@ COMING SOON PAGES
     font-size: 28px;
   }
 }
+/* ================================================================
+      LAPTOP MEDIA QUERY
+  ====================================================================*/
 
+@media only screen and (min-width: 1000px) {
+  /* General styles */
+
+  .hero {
+    height: 70vh;
+    padding-bottom: 150px;
+  }
+
+  .speaking-topics-div {
+    display: flex;
+  }
+
+  .speaking-topics-div img {
+    align-self: flex-start;
+  }
+
+  .as-seen-in img {
+    width: 200px;
+  }
+
+  .about .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .about-text {
+    margin-left: 60px;
+    width: 60%;
+    position: relative;
+  }
+}
 /* ================================================================
       LAPTOP MEDIA QUERY
   ====================================================================*/
