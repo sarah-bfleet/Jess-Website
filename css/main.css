@@ -714,6 +714,63 @@ COMING SOON PAGES
   margin: 0;
 }
 
+/*****************************************
+BLOG PAGE
+*****************************************/
+.blog {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.blog h2 {
+  font-size: 30px;
+}
+
+.card h5 {
+  font-style: italic;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 5px;
+  color: black;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.card img {
+  height: 200px;
+}
+
+.card button {
+  background-color: #fdd923;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.card button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+article {
+  margin-bottom: 60px;
+  color: #000;
+  padding: 50px 0 80px;
+}
+
+.article-main {
+  background-color: #f7f7f7;
+}
+
+article h2 {
+  font-size: 20px;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -1096,6 +1153,28 @@ COMING SOON PAGES
     color: white;
     margin: 0 10px;
     font-size: 28px;
+  }
+
+  /*---------------------------
+         ARTICLES 
+  -----------------------------*/
+
+  article h2 {
+    font-size: 30px;
+  }
+
+  /*BLOG PAGE*/
+
+  /* Add a card effect for articles */
+
+  .row1,
+  .row2 {
+    display: flex;
+  }
+
+  .card {
+    width: 33%;
+    margin: 30px;
   }
 }
 /* ================================================================
