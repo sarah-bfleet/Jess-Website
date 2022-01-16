@@ -167,6 +167,7 @@ header {
 /*********************** 
 Mobile Nav 
 ************************/
+
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
@@ -768,6 +769,23 @@ article {
   background-color: #f7f7f7;
 }
 
+/* .article-wrapper {
+  margin: 0 20px;
+} */
+
+.article-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.article-wrapper p {
+  line-height: 1.6;
+}
+
+.article-wrapper img {
+  margin-bottom: 60px;
+}
+
 article h2 {
   font-size: 20px;
 }
@@ -889,56 +907,21 @@ article h2 {
     overflow-x: hidden;
   }
 
-  header {
-    display: block;
-    padding-top: 0;
-  }
-
-  .logo {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    margin: 0;
-    color: #000;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-left: 20px;
-  }
-
   h2 {
     font-size: 35px;
-  }
-
-  header h2 {
-    font-size: 2.5rem;
   }
 
   h3 {
     font-size: 30px;
   }
 
-  .topnav {
-    display: none;
+  a.active,
+  a.icon {
+    font-size: 30px;
   }
 
-  .header-wrapper {
-    padding: 12px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navbar {
-    margin-right: 20px;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 0 10px;
-    font-size: 20px;
+  #myLinks a {
+    font-size: 30px;
   }
 
   .btn {
@@ -956,6 +939,7 @@ article h2 {
 
   .hero {
     height: 50vh;
+    padding-bottom: 100px;
   }
 
   .hero h1 {
@@ -1163,18 +1147,14 @@ article h2 {
     font-size: 30px;
   }
 
-  /*BLOG PAGE*/
-
-  /* Add a card effect for articles */
-
-  .row1,
-  .row2 {
-    display: flex;
+  .card {
+    height: auto;
+    margin: 30px;
   }
 
-  .card {
-    width: 33%;
-    margin: 30px;
+  .card img {
+    width: 100%;
+    height: auto;
   }
 }
 /* ================================================================
@@ -1183,6 +1163,45 @@ article h2 {
 
 @media only screen and (min-width: 1000px) {
   /* General styles */
+
+  .topnav {
+    display: none;
+  }
+
+  header {
+    display: block;
+    padding-top: 0;
+  }
+
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .header-wrapper {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    margin-right: 20px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+  }
 
   .hero {
     height: 70vh;
@@ -1263,6 +1282,27 @@ article h2 {
 
   .result p {
     font-size: 16px;
+  }
+
+  /*BLOG PAGE*/
+
+  /* Add a card effect for articles */
+
+  .row1,
+  .row2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 30px;
+    padding: 10px 30px 30px;
+  }
+
+  .article-wrapper,
+  .blog-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 /* ================================================================
