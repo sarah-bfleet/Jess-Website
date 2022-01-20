@@ -725,11 +725,15 @@ BLOG PAGE
 }
 
 .blog h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .card h5 {
   font-style: italic;
+}
+
+.card p {
+  font-size: 18px;
 }
 
 .card {
@@ -737,6 +741,7 @@ BLOG PAGE
   padding: 20px;
   margin: 20px 5px;
   color: black;
+
   /* display: flex;
   flex-direction: column; */
 }
@@ -776,6 +781,7 @@ article {
 .article-wrapper {
   max-width: 80%;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .article-wrapper p {
@@ -783,12 +789,42 @@ article {
 }
 
 .article-wrapper img {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 article h2 {
+  font-family: "Playfair Display";
+  font-weight: normal;
   font-size: 20px;
+  text-align: center;
 }
+
+.article-one-list {
+  font-size: 18px;
+  list-style-type: decimal;
+  padding-left: 50px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-two-img {
+  padding: 40px 0;
+}
+
+.article-btn {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.next-btn {
+  float: right;
+}
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -1144,7 +1180,7 @@ article h2 {
   -----------------------------*/
 
   article h2 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .card {
@@ -1155,6 +1191,10 @@ article h2 {
   .card img {
     width: 100%;
     height: auto;
+  }
+
+  .article-main p {
+    font-size: 18px;
   }
 }
 /* ================================================================
@@ -1291,12 +1331,12 @@ article h2 {
   .row1,
   .row2 {
     display: flex;
-    justify-content: center;
   }
 
   .card {
     margin: 30px;
     padding: 10px 30px 30px;
+    width: 33%;
   }
 
   .article-wrapper,
@@ -1304,6 +1344,25 @@ article h2 {
     max-width: 80%;
     margin: 0 auto;
   }
+
+  .article-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .article-text p,
+  .article-text li {
+    line-height: 1.75;
+  }
+
+  /* .article-one-img {
+    width: 75%;
+    height: 50vh;
+  } */
+
+  /* .img-div {
+    width: 60%;
+  } */
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
