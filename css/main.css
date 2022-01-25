@@ -720,7 +720,7 @@ BLOG PAGE
 *****************************************/
 .blog {
   background-color: #f7f7f7;
-  padding: 100px 0;
+  padding: 80px 0;
   margin: 0 auto;
 }
 
@@ -739,16 +739,14 @@ BLOG PAGE
 .card {
   background-color: white;
   padding: 20px;
-  margin: 20px 5px;
+  margin: 20px 10px;
   color: black;
-
-  /* display: flex;
-  flex-direction: column; */
 }
 
-.card img {
+/* .card img {
   height: 200px;
-}
+  text-align: center;
+} */
 
 .card button {
   background-color: #fdd923;
@@ -799,7 +797,7 @@ article h2 {
   text-align: center;
 }
 
-.article-one-list {
+.article-list {
   font-size: 18px;
   list-style-type: decimal;
   padding-left: 50px;
@@ -811,10 +809,10 @@ article h2 {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .article-two-img {
   padding: 40px 0;
-}
+} */
 
 .article-btn {
   color: #000;
@@ -825,6 +823,13 @@ article h2 {
   float: right;
 }
 
+.italics {
+  font-style: italic;
+}
+
+.article-3-list li {
+  font-style: italic;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -1184,13 +1189,8 @@ article h2 {
   }
 
   .card {
-    height: auto;
-    margin: 30px;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
+    margin: 30px auto;
+    width: 50%;
   }
 
   .article-main p {
@@ -1331,13 +1331,26 @@ article h2 {
   .row1,
   .row2 {
     display: flex;
+    justify-content: center;
   }
 
   .card {
     margin: 30px;
     padding: 10px 30px 30px;
-    width: 33%;
+    width: 30%;
   }
+
+  .card button {
+    margin-top: auto;
+  }
+
+  .card1 a {
+    margin-top: auto;
+  }
+
+  /* .card2 img {
+    align-self: flex-start;
+  } */
 
   .article-wrapper,
   .blog-wrapper {
@@ -1354,15 +1367,6 @@ article h2 {
   .article-text li {
     line-height: 1.75;
   }
-
-  /* .article-one-img {
-    width: 75%;
-    height: 50vh;
-  } */
-
-  /* .img-div {
-    width: 60%;
-  } */
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -1628,6 +1632,13 @@ article h2 {
   ====================================================================*/
 
 @media only screen and (min-width: 1900px) {
+  .header-wrapper,
+  .hero-content {
+    max-width: 1300px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
   .hero-content {
     padding-top: 150px;
   }
