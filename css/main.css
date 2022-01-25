@@ -1634,7 +1634,7 @@ article h2 {
 @media only screen and (min-width: 1900px) {
   .header-wrapper,
   .hero-content {
-    max-width: 1300px;
+    max-width: 1700px;
     width: 85%;
     margin: 0 auto;
   }
