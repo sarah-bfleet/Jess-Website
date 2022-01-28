@@ -743,11 +743,6 @@ BLOG PAGE
   color: black;
 }
 
-/* .card img {
-  height: 200px;
-  text-align: center;
-} */
-
 .card button {
   background-color: #fdd923;
   border: none;
@@ -771,10 +766,6 @@ article {
 .article-main {
   background-color: #f7f7f7;
 }
-
-/* .article-wrapper {
-  margin: 0 20px;
-} */
 
 .article-wrapper {
   max-width: 80%;
@@ -823,12 +814,33 @@ article h2 {
   float: right;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .italics {
   font-style: italic;
 }
 
 .article-3-list li {
   font-style: italic;
+}
+
+.ideas {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lower-alpha li {
+  margin: 15px 0 15px 50px;
+}
+
+.article-4-list li {
+  margin: 15px 0;
 }
 /* ==========================================================================
      Helper classes
