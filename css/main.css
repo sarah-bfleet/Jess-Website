@@ -833,17 +833,17 @@ article h2 {
   color: #0000ff;
 }
 
+.bold-underline {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .italics {
   font-style: italic;
 }
 
 .article-3-list li {
   font-style: italic;
-}
-
-.ideas {
-  text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .lower-alpha {
@@ -854,8 +854,21 @@ article h2 {
   margin: 15px 0 15px 50px;
 }
 
+.article-4-list {
+  padding-left: 0;
+  font-size: 18px;
+  list-style-type: decimal;
+}
+
 .article-4-list li {
   margin: 15px 0;
+}
+
+.heading-2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 8px 0 30px;
 }
 /* ==========================================================================
      Helper classes
@@ -1215,18 +1228,21 @@ article h2 {
   /*---------------------------
          ARTICLES 
   -----------------------------*/
+  .article-main p {
+    font-size: 18px;
+  }
 
   article h2 {
-    font-size: 45px;
+    font-size: 35px;
+  }
+  #heading-2 {
+    font-size: 28px;
+    margin: 0 0 30px;
   }
 
   .card {
     margin: 30px auto;
     width: 50%;
-  }
-
-  .article-main p {
-    font-size: 18px;
   }
 }
 /* ================================================================
