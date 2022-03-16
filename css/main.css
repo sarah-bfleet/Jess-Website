@@ -816,6 +816,10 @@ article h2 {
   width: 400px;
 }
 
+.article-img {
+  width: 400px;
+}
+
 .next-btn {
   float: right;
 }
