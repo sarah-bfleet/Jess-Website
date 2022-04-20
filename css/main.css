@@ -165,6 +165,10 @@ header {
   display: none;
 }
 
+.logo {
+  font-weight: 900;
+}
+
 /*********************** 
 Mobile Nav 
 ************************/
@@ -758,6 +762,10 @@ BLOG PAGE
   cursor: pointer;
 }
 
+.hidecard {
+ visibility: hidden;
+}
+
 article {
   margin-bottom: 60px;
   color: #000;
@@ -789,10 +797,6 @@ article h2 {
   text-align: center;
 }
 
-.article6heading {
-  text-transform: uppercase;
-}
-
 .article-list {
   font-size: 18px;
   list-style-type: decimal;
@@ -804,6 +808,11 @@ article h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.article-header h2,
+.heading-2 {
+  font-weight: 600;
 }
 
 .article2image,
@@ -879,7 +888,6 @@ article h2 {
 
 .heading-2 {
   font-size: 18px;
-  text-transform: uppercase;
   text-align: center;
   margin: 8px 0 30px;
 }
@@ -1410,7 +1418,8 @@ article h2 {
   /* Add a card effect for articles */
 
   .row1,
-  .row2 {
+  .row2, 
+  .row3 {
     display: flex;
     justify-content: center;
   }
@@ -1429,15 +1438,23 @@ article h2 {
     margin-top: auto;
   }
 
-  .card5,
-  .card6 {
+  .card {
     display: flex;
     flex-direction: column;
   }
 
-  .card5 a,
-  .card6 a {
+  .card a {
     margin-top: auto;
+  }
+
+  .card4 img {
+    height: 245px;
+    width: 211px;
+  }
+
+  .card7 img {
+    height: 245px;
+    width: 200px;
   }
 
   .article-wrapper,
@@ -1701,6 +1718,8 @@ article h2 {
   .articles-btn {
     margin-top: 50px;
   }
+
+
 }
 
 /* ================================================================
