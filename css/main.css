@@ -256,15 +256,17 @@ Hero Section
 
 .hero-content-side2 span {
   color: #fdd923;
+  color: #000;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .hero-content p {
-  text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px 0 30px;
+  color: #000;
 }
 
 .hero h1 {
@@ -403,16 +405,6 @@ Hero Section
   font-size: 22px;
 }
 
-.speaking-topics-intro {
-  margin-bottom: 50px;
-  text-align: justify;
-}
-
-.speaking-topics-list li {
-  font-size: 18px;
-  list-style-type: disc;
-}
-
 .speaking-topics-div2 {
   margin: 0 22px 25px;
 }
@@ -422,7 +414,7 @@ Hero Section
 }
 
 .speaking-topics button {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .speaking-topics-img {
@@ -479,45 +471,6 @@ Hero Section
 .p1 {
   font-size: 18px;
   margin-bottom: 20px;
-}
-
-.results {
-  color: #000;
-  background-color: #f7f7f7;
-  padding: 20px 0 40px;
-}
-
-.results h2 {
-  text-align: center;
-}
-
-.result {
-  background-color: #000;
-  color: #fdd923;
-  padding: 35px 25px;
-  border: 3px solid #fdd923;
-  border-radius: 50%;
-  text-align: center;
-  width: 200px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5px auto;
-}
-
-.result h3 {
-  text-decoration: underline;
-  text-transform: capitalize;
-  font-size: 20px;
-}
-
-.result p {
-  font-size: 16px;
-}
-
-.result4 p {
-  margin: 0;
 }
 
 .logo-h2 {
@@ -591,6 +544,7 @@ Hero Section
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #f7f7f7;
 }
 
 .about .wrapper {
@@ -621,7 +575,6 @@ Hero Section
   color: #000;
   text-align: center;
   padding: 30px 0 80px;
-  background-color: #f7f7f7;
 }
 
 .work {
@@ -1061,9 +1014,8 @@ article h2 {
     font-weight: bold;
   }
 
-  .hero-content {
+  /* .hero-content {
     margin-left: 20px;
-    display: flex;
   }
 
   .hero-content-side1 {
@@ -1073,7 +1025,7 @@ article h2 {
   .hero-content-side2 {
     width: 40%;
     align-self: flex-end;
-  }
+  } */
 
   .openp1 {
     font-size: 32px;
@@ -1094,14 +1046,7 @@ article h2 {
 
   .keynote-speaker-text {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-left: 25px;
-  }
-
-  .keynote-speaker img {
-    align-self: center;
   }
 
   .speaking-topics {
@@ -1117,33 +1062,6 @@ article h2 {
   }
   .speaking-topics-img {
     display: none;
-  }
-
-  .results {
-    padding: 20px 0 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .result {
-    padding: 50px;
-    margin: 10px 20px;
-    height: 170px;
-    width: 255px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .result h2 {
-    font-size: 35px;
-  }
-
-  .result h3 {
-    font-size: 25px;
-    margin-bottom: 15px;
   }
 
   .work {
@@ -1216,7 +1134,6 @@ article h2 {
 
   .about-pic1 {
     width: 200px;
-    height: 900px;
   }
 
   /* FOOTER */
@@ -1319,26 +1236,26 @@ article h2 {
 
   .keynote-speaker-div {
     display: flex;
-    align-items: center;
   }
 
-  .keynote-speaker img {
-    width: 600px;
-    height: 480px;
-  }
+  .keynote-speaker h2 {
+     margin-bottom: 15px;
+     margin-top: 0;
+    }
 
   .speaking-topics-div {
     display: flex;
+    width: 100%;
   }
 
-  .speaking-topics-div img {
-    align-self: flex-start;
-  }
+   .speaking-topics-div2 {
+    width: 60%;
+   }
 
   .speaking-topics-img {
     align-self: flex-start;
-    width: 50%;
     display: block;
+    width: 40%;
   }
 
   .speaking-topics-img-tablet {
@@ -1394,23 +1311,7 @@ article h2 {
   }
 
   .about-pics img {
-    height: 700px;
-    width: 300px;
-  }
-
-  .results h2 {
-    font-size: 40px;
-  }
-
-  .result {
-    padding: 30px 20px;
-    margin: 10px 20px;
-    height: 200px;
-    width: 320px;
-  }
-
-  .result p {
-    font-size: 16px;
+    width: 250px;
   }
 
   /*BLOG PAGE*/
@@ -1517,7 +1418,9 @@ article h2 {
 
   .hero::before {
     background: url("../img/hero-img.jpeg") no-repeat fixed;
+    background: url("../img/jesstesthero.jpg") no-repeat fixed;
     background-size: cover;
+    background-position: 80% 20%;
   }
 
   .hero h1 {
@@ -1527,22 +1430,16 @@ article h2 {
   }
 
   .hero-content {
-    margin-left: 40px;
-    padding-top: 60px;
+    margin-right: 40px;
+    padding-top: 400px;
     display: flex;
-  }
-
-  .hero-content-side1 {
-    width: 40%;
-  }
-
-  .hero-content-side2 {
-    width: 60%;
-    align-self: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    
   }
 
   .hero-content-side2 p {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: bold;
     margin: 0;
   }
@@ -1553,7 +1450,7 @@ article h2 {
   }
 
   .opening-statement h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .openp1 {
@@ -1577,16 +1474,11 @@ article h2 {
   }
 
   .btn.keynote-btn {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .keynote-speaker {
-    padding: 70px 30px;
-  }
-
-  .keynote-speaker h2 {
-    margin-bottom: 20px;
-    margin-top: 0;
+    padding: 30px 30px 0;
   }
 
   .keynote-speaker li {
@@ -1594,31 +1486,27 @@ article h2 {
   }
 
   .keynote-speaker .p1 {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 95%;
   }
 
-  .keynote-speaker-div,
+  .keynote-speaker-div {
+   display: flex;
+   align-items: flex-start;
+  }
+
   .speaking-topics-div {
-    margin: 0 40px;
-    display: flex;
+    margin: 0 0 0 40px;
+    padding: 30px 0 30px 40px;
   }
 
   .speaking,
   .about,
   .videos-articles {
-    padding-top: 45px;
-  }
-
-  .speaking-topics-div {
-    padding: 30px 60px;
-  }
-
-  .speaking-topics-intro {
-    width: 82%;
+    padding-top: 35px;
   }
 
   .learning-outcomes {
@@ -1634,10 +1522,6 @@ article h2 {
   .learning-outcomes li {
     font-size: 18px;
     margin: 0;
-  }
-
-  .results-div {
-    display: flex;
   }
 
   .work-with {
