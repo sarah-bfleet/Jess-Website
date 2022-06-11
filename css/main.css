@@ -115,13 +115,13 @@ a {
   text-decoration: none;
 }
 
+h2 {
+ text-transform: uppercase;
+}
+
 h3,
 h4 {
   margin: 0;
-}
-
-p {
-  font-size: 1.125rem;
 }
 
 img {
@@ -235,6 +235,7 @@ Hero Section
   bottom: 0px;
   left: 0px;
   background: url("../img/mobilehero.jpg") no-repeat;
+   background: url("../img/jessimage0610.jpg") no-repeat fixed;
   z-index: -2;
   background-color: #000;
 }
@@ -251,29 +252,22 @@ Hero Section
 }
 
 .hero-content {
-  margin-left: 10px;
-}
-
-.hero-content-side2 span {
-  color: #fdd923;
-  color: #000;
-  font-weight: bolder;
-  text-transform: uppercase;
+ margin-left: 10px;
+ padding-top: 150px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 60%;
+ padding-bottom: 30px;
 }
 
 .hero-content p {
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 18px;
-  padding: 20px 0 30px;
+  font-size: 25px;
+  padding: 20px 0 0;
   color: #000;
-}
-
-.hero h1 {
-  margin-top: 0;
-  font-size: 18px;
-  padding-top: 60px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -284,6 +278,7 @@ Hero Section
   background-color: #fdd923;
   margin-top: 40px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -304,41 +299,25 @@ Hero Section
 .opening-statement {
   background-color: #fdd923;
   color: #000;
-  padding: 40px 0;
+  padding: 30px 0 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.opening-statement h2 {
-  font-size: 35px;
-  font-weight: normal;
-  width: 90%;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.openp1,
-.openp2 {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .openp1 {
-  font-size: 25px;
-  margin: 25px 15px;
+ margin: 0;
+}
+
+.openp1, .openp2 {
+ font-size: 25px;
+ text-align: center;
 }
 
 .openp2 {
-  font-size: 18px;
   margin: 20px 10px 15px;
-}
-
-.opening-statement span {
-  font-style: italic;
+  font-weight: bold;
 }
 
 .opening-statement-btn,
@@ -360,18 +339,22 @@ Hero Section
 
 .keynote-speaker-div {
   margin: 0 10px;
-  padding: 40px 0 70px;
+  padding: 30px 0 40px;
 }
 
 .keynote-speaker-text {
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 15px;
+}
+
+.keynote-speaker-text p {
+ font-size: 16px;
+ margin-bottom: 20px;
 }
 
 .keynote-speaker-text h2 {
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .keynote-speaker img {
@@ -391,11 +374,10 @@ Hero Section
 
 .speaking-topics {
   color: black;
-  padding: 10px 0 70px;
+  padding: 10px 0;
 }
 
 .speaking-topics h2 {
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -427,7 +409,7 @@ Hero Section
 }
 
 .learning-outcomes {
-  margin: 30px 0 70px;
+  margin: 30px 0;
 }
 
 .learning-outcomes h5 {
@@ -441,7 +423,7 @@ Hero Section
 }
 
 .learning-outcomes li {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 10px;
 }
 
@@ -468,11 +450,6 @@ Hero Section
   background-color: #f1f1f1;
 }
 
-.p1 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
 .logo-h2 {
   font-size: 20px;
 }
@@ -484,11 +461,6 @@ Hero Section
 .company-logos h2 {
   color: black;
   text-align: center;
-  text-transform: uppercase;
-}
-
-.company-logo-list img {
-  width: 50px;
 }
 
 .company-logo-list {
@@ -498,6 +470,9 @@ Hero Section
   margin: 25px 0;
 }
 
+.company-logo-list li {
+ margin-right: 10px;
+}
 .amex-desktop::before {
   display: none;
 }
@@ -509,13 +484,16 @@ Hero Section
   background-color: gray;
 }
 
+.smlogo, .bglogo {
+ width: 50px;
+}
+
 .as-seen-in {
   color: #000;
   text-align: center;
 }
 
 .as-seen-in h2 {
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -523,16 +501,20 @@ Hero Section
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .as-seen-in-list li {
   margin: 0 10px;
 }
 
-.as-seen-in img {
+    .nytimeslogo {
+     width: 100px;
+    }
+
+/* .as-seen-in img {
   width: 100px;
-}
+} */
 
 /********************************************
                    ABOUT 
@@ -561,10 +543,9 @@ Hero Section
   margin: 0 15px;
 }
 
-.about h3 {
-  text-transform: uppercase;
-  font-size: 30px;
-  margin-top: 10px;
+.about h2 {
+  margin-top: 29px;
+  line-height: .75;
 }
 
 /********************************************
@@ -580,8 +561,8 @@ Hero Section
 .work {
   background-color: #000;
   color: #fff;
-  padding: 45px 35px;
-  border: 3px solid #fdd923;
+  padding: 35px 25px;
+  border: 5px solid #fdd923;
   text-align: center;
   margin: 10px 15px;
   display: flex;
@@ -942,6 +923,7 @@ article h2 {
 
   .hero::before {
     background: url("../img/tabletopenpic.jpg") no-repeat;
+    background: url("../img/temp.jpg") no-repeat fixed;
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -1007,34 +989,21 @@ article h2 {
   }
 
   .hero-content p {
+    font-size: 35px;
     margin-top: 100px;
     margin-top: 0;
-    font-size: 22px;
-    padding: 0;
+    padding-top: 150px;
     font-weight: bold;
   }
 
-  /* .hero-content {
-    margin-left: 20px;
-  }
-
-  .hero-content-side1 {
-    width: 60%;
-  }
-
-  .hero-content-side2 {
-    width: 40%;
-    align-self: flex-end;
-  } */
-
   .openp1 {
-    font-size: 32px;
+   width: 90%;
   }
 
-  .openp2 {
-    font-size: 25px;
+  .openp1, .openp2 {
+   font-size: 35px;
   }
-
+  
   .keynote-speaker {
     padding: 30px 0 0;
   }
@@ -1050,7 +1019,7 @@ article h2 {
   }
 
   .speaking-topics {
-    padding: 70px 0 20px;
+    padding: 30px 0 20px;
   }
 
   .speaking-topics h2 {
@@ -1060,12 +1029,13 @@ article h2 {
   .speaking-topics-div2 h3 {
     font-size: 26px;
   }
+
   .speaking-topics-img {
     display: none;
   }
 
   .work {
-    margin: 10px 20px;
+    margin: 10px 30px;
     width: 50%;
     height: 200px;
   }
@@ -1078,19 +1048,12 @@ article h2 {
   /* COMPANY LOGOS */
 
   .company-logos {
-    padding: 20px 0 50px;
+    padding: 10px 0 20px;
   }
 
-  .company-logos img {
-    width: 100px;
-  }
-
-  .company-logo-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 25px 40px;
-  }
+ .smlogo, .bglogo {
+  width: 80px;
+ }
 
   .amex-desktop::before {
     display: block;
@@ -1101,22 +1064,19 @@ article h2 {
   }
 
   .logo-h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .as-seen-in-list li {
     margin: 0 20px;
   }
 
-  .as-seen-in img {
-    width: 300px;
-  }
 
   /* ABOUT */
 
-  .about {
+  /* .about {
     padding: 70px 0;
-  }
+  } */
 
   .about h3 {
     margin: 40px 0;
@@ -1127,14 +1087,9 @@ article h2 {
     margin-top: 0;
   }
 
-  .about-pics {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .about-pic1 {
-    width: 200px;
-  }
+  /* .about-pic1 {
+    width: 100px;
+  } */
 
   /* FOOTER */
 
@@ -1209,6 +1164,18 @@ article h2 {
     margin-left: 20px;
   }
 
+  .logo h2 {
+   font-size: 20px;
+  }
+
+  .bglogo {
+   width: 100px;
+  }
+
+   .nytimeslogo {
+    width: 150px;
+   }
+
   .header-wrapper {
     padding: 12px 0;
     display: flex;
@@ -1234,28 +1201,46 @@ article h2 {
     padding-bottom: 150px;
   }
 
-  .keynote-speaker-div {
-    display: flex;
+ .hero-content {
+   margin-left: 40px;
+   padding-top: 250px;
+   width: 60%;
   }
 
-  .keynote-speaker h2 {
-     margin-bottom: 15px;
-     margin-top: 0;
+ .hero-content-side2 p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+ }
+
+ .herospan2 {
+  font-size: 50px;
+ }
+
+ .herospan1 {
+  font-size: 50px;
+ }
+
+  .opening-statement-btn {
+     margin-top: 20px;
     }
 
+
+  .keynote-speaker h2 {
+     margin-bottom: 25px;
+     margin-top: 0;
+     line-height: .75;
+    }
+/* 
   .speaking-topics-div {
     display: flex;
     width: 100%;
-  }
-
-   .speaking-topics-div2 {
-    width: 60%;
-   }
+  } */
 
   .speaking-topics-img {
     align-self: flex-start;
     display: block;
-    width: 40%;
+    height: 800px;
   }
 
   .speaking-topics-img-tablet {
@@ -1263,16 +1248,16 @@ article h2 {
   }
 
   .speaking-topics h2 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 0;
   }
 
   .speaking-topics h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .speaking-topics h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .speaking-topics h5 {
@@ -1288,31 +1273,51 @@ article h2 {
     font-size: 16px;
   }
 
-  .as-seen-in img {
-    width: 200px;
+  
+ .company-logo-list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  margin: 25px 50px;
+  text-align: center;
+ }
+
+  .company-logo-list li {
+   margin-right: 100px;
   }
+
+  /* .as-seen-in img {
+    width: 100px;
+  } */
 
   .about .content-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    align-items: flex-start;
+   width: 100%;
   }
 
   .about-text {
     margin-left: 40px;
-    width: 60%;
-    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 66%;
   }
 
-  .about-pics {
-    width: 30%;
+  .about h2 {
+     margin-top: 0;
+    }
+
+ .about-pics {
+    width: 40%;
     margin: 0;
   }
 
-  .about-pics img {
-    width: 250px;
-  }
+ .work-with-div {
+  margin: 0 20px;
+  justify-content: center;
+  flex-direction: row;
+ }
 
   /*BLOG PAGE*/
 
@@ -1380,7 +1385,8 @@ article h2 {
 
 @media only screen and (min-width: 1200px) {
   h2 {
-    font-size: 45px;
+    font-size: 35px;
+    text-transform: uppercase;
   }
 
   h3 {
@@ -1388,8 +1394,8 @@ article h2 {
     text-transform: uppercase;
   }
 
-  h4,
-  p {
+  h4
+   {
     font-size: 1.25rem;
   }
 
@@ -1418,47 +1424,49 @@ article h2 {
 
   .hero::before {
     background: url("../img/hero-img.jpeg") no-repeat fixed;
-    background: url("../img/jesstesthero.jpg") no-repeat fixed;
+    background: url("../img/jesshero.jpg") no-repeat fixed;
+    background: url("../img/temp.jpg") no-repeat fixed;  
+    /* background: url("../img/jesstesthero.jpg") no-repeat fixed;  */
+     background: url("../img/herokeynote.jpg") no-repeat fixed;
     background-size: cover;
-    background-position: 80% 20%;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .hero-content {
-    margin-right: 40px;
-    padding-top: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     
   }
 
+  .hero-content {
+    width: 55%;
+    padding-top: 180px;
+  }
+
   .hero-content-side2 p {
-    font-size: 34px;
+    font-size: 55px;
     font-weight: bold;
+    text-transform: uppercase;
     margin: 0;
+   color: black;
+  }
+
+  .herospan2 {
+   font-size: 65px;
+  }
+   
+  .herospan1 {
+    font-size: 65px;
+   }
+
+  .openspan2 {
+   color: #fdd923;
   }
 
   .hero-btn {
     margin-top: 20px;
-    font-weight: normal;
   }
 
-  .opening-statement h2 {
-    font-size: 40px;
-  }
-
-  .openp1 {
-    font-size: 40px;
+  .opening-statement p {
+    font-size: 45px;
   }
 
   .openp2 {
-    font-size: 30px;
+    font-size: 55px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -1468,39 +1476,44 @@ article h2 {
 
   /* KEYNOTE SPEAKER & SPEAKING TOPICS */
 
+    .keynote-speaker {
+     padding: 30px 30px 0;
+    }
+
+   .keynote-speaker-div {
+    display: flex;
+    align-items: flex-start;
+   }
+
+  .keynote-img-div {
+   width: 55%;
+  }
+
   .keynote-speaker-text {
     margin: 0 0 0 50px;
     width: 45%;
   }
 
-  .btn.keynote-btn {
-    margin-top: 20px;
-  }
-
-  .keynote-speaker {
-    padding: 30px 30px 0;
-  }
-
-  .keynote-speaker li {
-    font-size: 18px;
-  }
-
-  .keynote-speaker .p1 {
+  .keynote-speaker .keynote-speaker-text p {
     font-size: 16px;
     margin-right: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
-    width: 95%;
+    margin-bottom: 15px;
   }
 
-  .keynote-speaker-div {
-   display: flex;
-   align-items: flex-start;
+  .btn.keynote-btn {
+   margin-top: 20px;
+  }
+
+  .speaking-topics-div2 {
+   width: 60%;
   }
 
   .speaking-topics-div {
-    margin: 0 0 0 40px;
-    padding: 30px 0 30px 40px;
+    margin: 0 0 0 20px;
+    padding: 30px 0 0 20px;
+    display: flex;
+     width: 100%;
   }
 
   .speaking,
@@ -1510,53 +1523,55 @@ article h2 {
   }
 
   .learning-outcomes {
-    margin: 10px 0 50px;
+    margin: 10px 0 30px;
   }
 
   .learning-outcomes h5 {
-    font-size: 20px;
     margin-top: 0;
     margin-bottom: 10px;
   }
 
   .learning-outcomes li {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
   }
 
   .work-with {
-    padding: 30px 0 130px;
+    padding: 10px 0 50px;
   }
 
   .work-with-div {
     margin: 0 70px;
+    justify-content: center;
     flex-direction: row;
   }
 
   .work {
-    width: 30%;
-    height: 252px;
+    width: 20%;
+    height: 200px;
   }
   /* ABOUT */
 
   .about .content-wrapper {
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
 
-  .about h3 {
-    margin-top: 40px;
-    margin-bottom: 38px;
-    font-size: 50px;
+  .about-text {
+   line-height: 1.6;
+   width: 55%;
+  }
+
+  .about img {
+   width: 20%;
+  }
+
+  .logo-flexbox {
+   display: flex;
+   align-items: center;
   }
 
   .logo-h2 {
-    font-size: 35px;
-  }
-
-  .as-seen-in img {
-    width: 200px;
+    font-size: 25px;
   }
 
   .as-seen-in-list li {
@@ -1628,9 +1643,6 @@ article h2 {
     margin: 0 50px;
   }
 
-  .keynote-speaker figure {
-    margin-right: 0;
-  }
 }
 
 /* ==========================================================================
