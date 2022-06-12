@@ -235,7 +235,7 @@ Hero Section
   bottom: 0px;
   left: 0px;
   background: url("../img/mobilehero.jpg") no-repeat;
-   background: url("../img/jessimage0610.jpg") no-repeat fixed;
+   /* background: url("../img/jessimage0610.jpg") no-repeat fixed; */
   z-index: -2;
   background-color: #000;
 }
@@ -253,11 +253,12 @@ Hero Section
 
 .hero-content {
  margin-left: 10px;
- padding-top: 150px;
+ padding-top: 200px;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  width: 60%;
+ width: 70%;
  padding-bottom: 30px;
 }
 
@@ -267,7 +268,12 @@ Hero Section
   font-size: 25px;
   padding: 20px 0 0;
   color: #000;
+  color: #fff;
   text-transform: uppercase;
+}
+
+.herospan1 {
+ font-size: 30px;
 }
 
 .btn {
@@ -290,6 +296,7 @@ Hero Section
 .hero-btn {
   border: 2.5px solid #fdd923;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 /**********************************
@@ -299,7 +306,7 @@ Hero Section
 .opening-statement {
   background-color: #fdd923;
   color: #000;
-  padding: 30px 0 35px;
+  padding: 5px 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,7 +314,7 @@ Hero Section
 }
 
 .openp1 {
- margin: 0;
+ margin: 0 12px;
 }
 
 .openp1, .openp2 {
@@ -501,20 +508,17 @@ Hero Section
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .as-seen-in-list li {
   margin: 0 10px;
 }
 
-    .nytimeslogo {
-     width: 100px;
-    }
+.nytimeslogo {
+ width: 100px;
+}
 
-/* .as-seen-in img {
-  width: 100px;
-} */
 
 /********************************************
                    ABOUT 
@@ -923,7 +927,7 @@ article h2 {
 
   .hero::before {
     background: url("../img/tabletopenpic.jpg") no-repeat;
-    background: url("../img/temp.jpg") no-repeat fixed;
+    /* background: url("../img/temp.jpg") no-repeat fixed; */
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -993,9 +997,20 @@ article h2 {
     margin-top: 100px;
     margin-top: 0;
     padding-top: 150px;
+    padding-top: 200px;
     font-weight: bold;
   }
 
+  .herospan1 {
+   font-size: 40px;
+  }
+  
+  .opening-statement-btn {
+   margin-top: 0;
+   margin-bottom: 10px;
+  }
+
+  
   .openp1 {
    width: 90%;
   }
@@ -1048,7 +1063,7 @@ article h2 {
   /* COMPANY LOGOS */
 
   .company-logos {
-    padding: 10px 0 20px;
+    padding: 20px 0;
   }
 
  .smlogo, .bglogo {
@@ -1087,6 +1102,11 @@ article h2 {
     margin-top: 0;
   }
 
+  /* .aboutimg {
+   width: 75%;
+   margin: 0 auto;
+  } */
+  
   /* .about-pic1 {
     width: 100px;
   } */
@@ -1166,6 +1186,7 @@ article h2 {
 
   .logo h2 {
    font-size: 20px;
+   margin-top: 0;
   }
 
   .bglogo {
@@ -1203,7 +1224,7 @@ article h2 {
 
  .hero-content {
    margin-left: 40px;
-   padding-top: 250px;
+   padding-top: 150px;
    width: 60%;
   }
 
@@ -1213,18 +1234,16 @@ article h2 {
   margin: 0;
  }
 
- .herospan2 {
+ /* .herospan2 {
   font-size: 50px;
- }
+ } */
 
  .herospan1 {
   font-size: 50px;
+
  }
 
-  .opening-statement-btn {
-     margin-top: 20px;
-    }
-
+ 
 
   .keynote-speaker h2 {
      margin-bottom: 25px;
@@ -1240,7 +1259,7 @@ article h2 {
   .speaking-topics-img {
     align-self: flex-start;
     display: block;
-    height: 800px;
+    height: 700px;
   }
 
   .speaking-topics-img-tablet {
@@ -1294,7 +1313,9 @@ article h2 {
   .about .content-wrapper {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
    width: 100%;
+   margin-left: 40px;
   }
 
   .about-text {
@@ -1410,6 +1431,10 @@ article h2 {
     margin-left: 40px;
   }
 
+  .logo h2 {
+   margin-top: 0;
+  }
+
   .navbar {
     margin-right: 40px;
   }
@@ -1424,17 +1449,21 @@ article h2 {
 
   .hero::before {
     background: url("../img/hero-img.jpeg") no-repeat fixed;
-    background: url("../img/jesshero.jpg") no-repeat fixed;
+    /* background: url("../img/jesshero.jpg") no-repeat fixed;
     background: url("../img/temp.jpg") no-repeat fixed;  
-    /* background: url("../img/jesstesthero.jpg") no-repeat fixed;  */
+    
      background: url("../img/herokeynote.jpg") no-repeat fixed;
+     background: url("../img/testimage.jpg") no-repeat fixed;
+     background: url("../img/herotest2.jpg") no-repeat fixed;
+     background: url("../img/jesstesthero.jpg") no-repeat fixed;  
+      */
     background-size: cover;
     
   }
 
   .hero-content {
-    width: 55%;
-    padding-top: 180px;
+    
+    padding-top: 200px;
   }
 
   .hero-content-side2 p {
@@ -1442,7 +1471,7 @@ article h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-   color: black;
+   
   }
 
   .herospan2 {
@@ -1537,7 +1566,11 @@ article h2 {
   }
 
   .work-with {
-    padding: 10px 0 50px;
+    padding: 0 0 30px;
+  }
+
+  .work-with h2 {
+   margin-top: 20px;
   }
 
   .work-with-div {
@@ -1548,21 +1581,21 @@ article h2 {
 
   .work {
     width: 20%;
-    height: 200px;
+    height: 150px;
   }
   /* ABOUT */
-
+/* 
   .about .content-wrapper {
     justify-content: center;
-  }
+  } */
 
   .about-text {
    line-height: 1.6;
-   width: 55%;
+  
   }
 
   .about img {
-   width: 20%;
+   width: 25%;
   }
 
   .logo-flexbox {
@@ -1572,6 +1605,7 @@ article h2 {
 
   .logo-h2 {
     font-size: 25px;
+    margin-top: 0;
   }
 
   .as-seen-in-list li {
@@ -1580,6 +1614,9 @@ article h2 {
 
   /* FOOTER */
 
+  footer img {
+   width: 25%;
+  }
   .footer-div {
     display: flex;
     align-items: center;
