@@ -225,6 +225,7 @@ Hero Section
 
 .hero {
   position: relative;
+  height: 40vh;
 }
 
 .hero::before {
@@ -253,27 +254,27 @@ Hero Section
 
 .hero-content {
  margin-left: 10px;
- padding-top: 200px;
+ padding-top: 60px;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  width: 60%;
- width: 70%;
+ 
  padding-bottom: 30px;
 }
 
 .hero-content p {
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px 0 0;
   color: #000;
-  color: #fff;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .herospan1 {
- font-size: 30px;
+ font-size: 25px;
 }
 
 .btn {
@@ -318,7 +319,7 @@ Hero Section
 }
 
 .openp1, .openp2 {
- font-size: 25px;
+ font-size: 20px;
  text-align: center;
 }
 
@@ -411,8 +412,9 @@ Hero Section
 }
 
 .speaking-topics-img-tablet {
-  width: 100%;
+  width: 70%;
   display: block;
+  margin: 0 auto;
 }
 
 .learning-outcomes {
@@ -541,7 +543,9 @@ Hero Section
 
 .about img {
   border: 2px solid white;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
 }
 
 .about-text {
@@ -999,8 +1003,11 @@ article h2 {
     margin-top: 100px;
     margin-top: 0;
     padding-top: 150px;
-    padding-top: 200px;
     font-weight: bold;
+  }
+
+  .hero-content {
+   padding-top: 150px;
   }
 
   .herospan1 {
@@ -1013,12 +1020,12 @@ article h2 {
   }
 
   
-  .openp1 {
+  /* .openp1 {
    width: 90%;
-  }
+  } */
 
   .openp1, .openp2 {
-   font-size: 35px;
+   font-size: 30px;
   }
   
   .keynote-speaker {
@@ -1033,6 +1040,11 @@ article h2 {
   .keynote-speaker-text {
     margin: 0;
     margin-left: 25px;
+  }
+
+ .keynote-img-div {
+   width: 73%;
+   margin: 0 auto;
   }
 
   .speaking-topics {
@@ -1091,10 +1103,6 @@ article h2 {
 
   /* ABOUT */
 
-  /* .about {
-    padding: 70px 0;
-  } */
-
   .about h3 {
     margin: 40px 0;
     font-size: 40px;
@@ -1104,14 +1112,9 @@ article h2 {
     margin-top: 0;
   }
 
-  /* .aboutimg {
-   width: 75%;
-   margin: 0 auto;
-  } */
-  
-  /* .about-pic1 {
-    width: 100px;
-  } */
+  .about img {
+   width: 55%;
+  }
 
   /* FOOTER */
 
@@ -1329,6 +1332,7 @@ article h2 {
     font-size: 16px;
     line-height: 1.5;
     width: 66%;
+    width: 45%;
   }
 
   .about h2 {
@@ -1459,7 +1463,12 @@ article h2 {
   }
 
   .hero-content {
-    padding-top: 150px;
+    padding-top: 130px;
+  }
+
+
+  .hero-btn {
+    margin-left: 100px;
   }
 
   .hero-content-side2 p {
@@ -1483,7 +1492,7 @@ article h2 {
   }
 
   .opening-statement p {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .openp2 {
@@ -1588,6 +1597,7 @@ article h2 {
 
   .about img {
    width: 25%;
+   margin: 0;
   }
 
   .logo-flexbox {
