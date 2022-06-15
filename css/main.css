@@ -235,7 +235,7 @@ Hero Section
   bottom: 0px;
   left: 0px;
   background: url("../img/mobilehero.jpg") no-repeat;
-   /* background: url("../img/jessimage0610.jpg") no-repeat fixed; */
+  background: url("../img/herotest6mobile.jpg") no-repeat fixed;
   z-index: -2;
   background-color: #000;
 }
@@ -306,7 +306,7 @@ Hero Section
 .opening-statement {
   background-color: #fdd923;
   color: #000;
-  padding: 5px 0 15px;
+  padding: 10px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,15 +459,13 @@ Hero Section
 
 .logo-h2 {
   font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .company-logos {
   padding: 20px 0;
-}
-
-.company-logos h2 {
-  color: black;
-  text-align: center;
 }
 
 .company-logo-list {
@@ -475,6 +473,10 @@ Hero Section
   align-items: center;
   justify-content: space-evenly;
   margin: 25px 0;
+}
+
+.company-logo-list1 {
+ margin-top: 0;
 }
 
 .company-logo-list li {
@@ -927,7 +929,7 @@ article h2 {
 
   .hero::before {
     background: url("../img/tabletopenpic.jpg") no-repeat;
-    /* background: url("../img/temp.jpg") no-repeat fixed; */
+    background: url("../img/herotest6tablet.jpg") no-repeat fixed;
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -1186,7 +1188,7 @@ article h2 {
 
   .logo h2 {
    font-size: 20px;
-   margin-top: 0;
+   margin: 0;
   }
 
   .bglogo {
@@ -1301,6 +1303,10 @@ article h2 {
   margin: 25px 50px;
   text-align: center;
  }
+
+  .company-logo-list1 {
+   margin-top: 5px;
+  }
 
   .company-logo-list li {
    margin-right: 100px;
@@ -1431,10 +1437,6 @@ article h2 {
     margin-left: 40px;
   }
 
-  .logo h2 {
-   margin-top: 0;
-  }
-
   .navbar {
     margin-right: 40px;
   }
@@ -1449,21 +1451,15 @@ article h2 {
 
   .hero::before {
     background: url("../img/hero-img.jpeg") no-repeat fixed;
-    /* background: url("../img/jesshero.jpg") no-repeat fixed;
-    background: url("../img/temp.jpg") no-repeat fixed;  
-    
-     background: url("../img/herokeynote.jpg") no-repeat fixed;
-     background: url("../img/testimage.jpg") no-repeat fixed;
-     background: url("../img/herotest2.jpg") no-repeat fixed;
-     background: url("../img/jesstesthero.jpg") no-repeat fixed;  
-      */
+    background: url("../img/jesshero.jpg") no-repeat fixed;
+    background: url("../img/temp.jpg") no-repeat fixed;   
+    background: url("../img/jesstesthero.jpg") no-repeat fixed;   
+    background: url("../img/herotest6.jpg") no-repeat fixed; 
     background-size: cover;
-    
   }
 
   .hero-content {
-    
-    padding-top: 200px;
+    padding-top: 150px;
   }
 
   .hero-content-side2 p {
@@ -1472,10 +1468,6 @@ article h2 {
     text-transform: uppercase;
     margin: 0;
    
-  }
-
-  .herospan2 {
-   font-size: 65px;
   }
    
   .herospan1 {
@@ -1491,7 +1483,7 @@ article h2 {
   }
 
   .opening-statement p {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .openp2 {
@@ -1605,7 +1597,7 @@ article h2 {
 
   .logo-h2 {
     font-size: 25px;
-    margin-top: 0;
+    margin: 0;
   }
 
   .as-seen-in-list li {
@@ -1662,22 +1654,39 @@ article h2 {
       LARGE DESKTOP MEDIA QUERY
   ====================================================================*/
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1600px) {
   .header-wrapper,
   .hero-content {
     max-width: 1800px;
   }
 
   .hero-content {
-    padding-top: 150px;
+    padding-top: 350px;
+    width: 45%;
   }
 
-  .hero-content-side2 p {
-    font-size: 40px;
+  .hero-content p {
+   font-size: 65px;
   }
 
-  .keynote-speaker {
-    margin: 0 50px;
+  .herospan1 {
+   font-size: 75px;
+  }
+
+  .keynote-speaker-div {
+   justify-content: center;
+  }
+
+  .keynote-speaker-text {
+   width: 90%;
+  }
+
+  .keynote-speaker img {
+   width: 600px;
+  }
+
+  .opening-statement {
+   padding: 30px;
   }
 
 }
