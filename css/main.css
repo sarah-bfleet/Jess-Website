@@ -225,7 +225,7 @@ Hero Section
 
 .hero {
   position: relative;
-  height: 40vh;
+  height: 50vh;
 }
 
 .hero::before {
@@ -236,7 +236,8 @@ Hero Section
   bottom: 0px;
   left: 0px;
   background: url("../img/mobilehero.jpg") no-repeat;
-  background: url("../img/herotest6mobile.jpg") no-repeat fixed;
+  background: url("../img/herotest6mobile.jpg") no-repeat;
+ background: url("../img/jesstestheromobile.jpg") no-repeat;
   z-index: -2;
   background-color: #000;
 }
@@ -254,7 +255,7 @@ Hero Section
 
 .hero-content {
  margin-left: 10px;
- padding-top: 60px;
+ padding-top: 100px;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
@@ -434,6 +435,10 @@ Hero Section
 .learning-outcomes li {
   font-size: 16px;
   margin: 0 10px;
+}
+
+.speaking-topics-closing {
+ font-weight: bold;
 }
 
 .collapsible {
@@ -933,10 +938,16 @@ article h2 {
 
   .hero::before {
     background: url("../img/tabletopenpic.jpg") no-repeat;
-    background: url("../img/herotest6tablet.jpg") no-repeat fixed;
+    background: url("../img/herotest6tablet.jpg") no-repeat;
+    background: url("../img/herotablet.jpg") no-repeat;
+    background: url("../img/jesstestheromobile.jpg") no-repeat;
     background-color: #000;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+  }
+
+  .hero-content {
+   padding-top: 300px;
   }
 }
 /* ====================================
@@ -980,12 +991,12 @@ article h2 {
   }
 
   .hero-btn {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px 20px;
   }
 
   .hero {
-    height: 50vh;
+    height: 65vh;
     padding-bottom: 100px;
   }
 
@@ -999,7 +1010,7 @@ article h2 {
   }
 
   .hero-content p {
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 100px;
     margin-top: 0;
     padding-top: 150px;
@@ -1007,11 +1018,11 @@ article h2 {
   }
 
   .hero-content {
-   padding-top: 150px;
+   padding-top: 350px;
   }
 
   .herospan1 {
-   font-size: 40px;
+   font-size: 45px;
   }
   
   .opening-statement-btn {
@@ -1289,14 +1300,14 @@ article h2 {
     margin-top: 0;
   }
 
-  .speaking-topics li {
+  .speaking-topics li,  .speaking-topics p {
     font-size: 16px;
   }
 
-  .speaking-topics p {
-    font-size: 16px;
-  }
-
+  .speaking-topics-closing  {
+     font-size: 20px;
+     font-style: italic;
+    }
   
  .company-logo-list {
   display: flex;
@@ -1447,10 +1458,6 @@ article h2 {
 
   .home {
     margin-right: auto;
-  }
-
-  .hero {
-    height: 100vh;
   }
 
   .hero::before {
@@ -1671,7 +1678,7 @@ article h2 {
   }
 
   .hero-content {
-    padding-top: 350px;
+    padding-top: 250px;
     width: 45%;
   }
 
