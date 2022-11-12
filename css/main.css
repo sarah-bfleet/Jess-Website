@@ -620,6 +620,7 @@ footer {
   background-color: #000;
   padding: 50px 0 10px;
   text-align: center;
+  clear: right;
 }
 
 .contact p {
@@ -865,46 +866,69 @@ article h2 {
 MEETING PLANNERS
 ========================*/
 
+.hrbottom {
+ margin-top: 25px;
+}
+
+.hrtop {
+margin-bottom: 25px;
+}
+
 .mtgplannerspage h1, .mtgplannerspage h2 {
  font-weight: 400;
 }
 
-.mtgplannersdiv1 {
-height: 800px;
- margin: 0 auto;
- padding: 30px 0;
- color: #000;
- max-width: 90%;
+.mtgplannerspage h1 {
+ font-size: 20px;
 }
 
-.flexdiv {
- display: flex;
+.mtgplannerspage h2 {
+ text-transform: capitalize;
+ font-size: 40px;
 }
-
 
 .jessbiocontainer {
-background-color: #f7f7f7;
+/* background-color: #f7f7f7; */
 padding: 30px 0;
 }
 
-.jessbio {
+.jessbio, .twopagerdiv {
  color: #000;
- display: flex;
- align-items: flex-start;
  margin: 50px auto;
- width: 80%;
-}
-
-.jessbio img {
- margin-right: 50px;
-}
-
-.jessbiotext {
- align-self: flex-start;
 }
 
 .jessbiop3 {
  margin-bottom: 40px;
+}
+
+.jessbiotext {
+ max-width: 80%;
+ margin: 0 auto;
+}
+
+.jessbiotext a {
+ display: block;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.jessbio img {
+ display: block;
+ margin: 0 auto;
+}
+
+.twopagerdiv {
+ width: 80%;
+}
+
+.twopagerimgs {
+ margin: 0 auto;
+}
+
+
+.twopagerimgs img {
+ margin-bottom: 20px;
+ width: 500px;
 }
 
 a.downloadbtn {
@@ -916,18 +940,7 @@ a.downloadbtn {
  font-weight: bold;
 }
 
-iframe {
- width: 60%;
-}
-
-.flexdiv2 {
- width: 40%;
- margin-left: 20px;
-}
-
 .mtgplannerssection2 {
-display: flex;
-justify-content: space-between;
 margin: 50px auto;
 max-width: 80%;
 color: #000;
@@ -935,11 +948,33 @@ color: #000;
 
 .block {
  display: block;
- width: 30%;
+ width: 40%;
  margin-top: 20px;
  text-align: center;
 }
 
+/*----------------------alternates-----------------------------------------*/
+.twopagerimgstwo img {
+ display: block;
+}
+
+.flexdiv2two {
+ color: black;
+float: right;
+width: 60%;
+margin-right: 50px;
+}
+
+.downloadbtnalt {
+ margin: 30px 0;
+}
+/* .mtgplannersdiv {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ justify-content: flex-end;
+ align-items: flex-start;
+} */
 /* ==========================================================================
      Helper classes
      ========================================================================== */
@@ -1525,6 +1560,94 @@ color: #000;
   .article-text li {
     line-height: 1.75;
   }
+
+    .mtgplannerspage h1 {
+     font-size: 20px;
+    }
+  
+    .mtgplannerspage h2 {
+     text-transform: capitalize;
+     font-size: 40px;
+    }
+  
+    .jessbiocontainer {
+     /* background-color: #f7f7f7; */
+     padding: 30px 0;
+    }
+  
+    .jessbio,
+    .twopagerdiv {
+     color: #000;
+     display: flex;
+     align-items: flex-start;
+     margin: 50px auto;
+    }
+  
+    .jessbio {
+     width: 60%;
+    }
+  
+    .jessbio img {
+     margin-right: 150px;
+    }
+  
+    .jessbiotext {
+     align-self: flex-start;
+    }
+
+        .jessbiotext a {
+         display: inline;
+         text-align: center;
+        
+        }
+  
+    .jessbiop3 {
+     margin-bottom: 40px;
+    }
+  
+    .twopagerdiv {
+     width: 80%;
+    }
+  
+    .twopagerimgs {
+     display: flex;
+     flex-direction: column;
+     width: 40%;
+     margin: 0;
+    }
+  
+    .flexdiv2 {
+     width: 50%;
+    }
+  
+    .twopagerimgs img {
+     margin-bottom: 20px;
+     width: 500px;
+    }
+  
+    a.downloadbtn {
+     background-color: #fdd923;
+     text-transform: uppercase;
+     padding: 20px;
+     border-radius: 30px;
+     color: #000;
+     font-weight: bold;
+    }
+  
+    .mtgplannerssection2 {
+     display: flex;
+     justify-content: space-between;
+     margin: 50px auto;
+     max-width: 80%;
+     color: #000;
+    }
+  
+    .block {
+     display: block;
+     width: 30%;
+     margin-top: 20px;
+     text-align: center;
+    }
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
