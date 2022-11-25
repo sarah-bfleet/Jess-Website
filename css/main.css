@@ -867,11 +867,11 @@ MEETING PLANNERS
 ========================*/
 
 .hrbottom {
- margin-top: 25px;
+ margin-top: 30px;
 }
 
 .hrtop {
-margin-bottom: 25px;
+margin-bottom: 30px;
 }
 
 .mtgplannerspage h1, .mtgplannerspage h2 {
@@ -884,7 +884,7 @@ margin-bottom: 25px;
 
 .mtgplannerspage h2 {
  text-transform: capitalize;
- font-size: 40px;
+ font-size: 30px;
 }
 
 .jessbiocontainer {
@@ -903,7 +903,12 @@ padding: 30px 0;
 
 .jessbiotext {
  max-width: 80%;
- margin: 0 auto;
+ margin: 40px auto 0;
+}
+
+.flexdiv2
+ {
+ margin-top: 20px;
 }
 
 .jessbiotext a {
@@ -938,6 +943,7 @@ a.downloadbtn {
  border-radius: 30px;
  color: #000;
  font-weight: bold;
+ width: 60%;
 }
 
 .mtgplannerssection2 {
@@ -1296,6 +1302,11 @@ margin-right: 50px;
     font-size: 18px;
   }
 
+  .mtgplannerspage h2 {
+   text-transform: capitalize;
+   font-size: 40px;
+  }
+
   article h2 {
     font-size: 35px;
   }
@@ -1308,8 +1319,12 @@ margin-right: 50px;
     margin: 30px auto;
     width: 50%;
   }
- 
-    .jessbiotext a {
+
+  .flexdiv2 {
+   margin-top: 40px;
+  }
+
+  .jessbiotext a {
      width: 50%;
     }
 
@@ -1318,6 +1333,16 @@ margin-right: 50px;
      margin: 0 auto;
      width: 80%;
      margin-bottom: 20px;
+    }
+    /* .block {
+     display: block;
+     width: 30%;
+     margin-top: 20px;
+     text-align: center;
+    } */
+
+    a.downloadbtn {
+     width: 40%;
     }
 }
 /* ================================================================
@@ -1579,11 +1604,6 @@ margin-right: 50px;
      font-size: 20px;
     }
   
-    .mtgplannerspage h2 {
-     text-transform: capitalize;
-     font-size: 40px;
-    }
-  
     .jessbiocontainer {
      padding: 30px 0;
     }
@@ -1605,6 +1625,7 @@ margin-right: 50px;
     .jessbiotext {
      align-self: flex-start;
      width: 60%;
+     margin-top: 0;
     }
 
     .jessbioimgdiv {
@@ -1646,6 +1667,7 @@ margin-right: 50px;
      border-radius: 30px;
      color: #000;
      font-weight: bold;
+     width: 40%;
     }
   
     .mtgplannerssection2 {
@@ -1654,13 +1676,6 @@ margin-right: 50px;
      margin: 50px auto;
      max-width: 80%;
      color: #000;
-    }
-  
-    .block {
-     display: block;
-     width: 30%;
-     margin-top: 20px;
-     text-align: center;
     }
 }
 /* ================================================================
