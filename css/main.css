@@ -228,10 +228,39 @@ a.active {
 /**********************************
 Hero Section  
 ***********************************/
+.hero1 {
+ display: none;
+}
+
+.hero-mobile {
+ background-color: #f3efef;
+ display: block;
+ color: black;
+}
 
 .hero {
   position: relative;
   height: 50vh;
+}
+
+.heroleft {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 50px;
+}
+
+.heroleft p {
+ font-size: 35px;
+ text-transform: uppercase;
+ text-align: center;
+ margin-top: 0;
+ margin-bottom: 0;
+ padding: 50px 30px 0;
+}
+
+.herospan1 {
+ font-size: 40px;
 }
 
 .hero::before {
@@ -280,10 +309,6 @@ Hero Section
   font-weight: bold;
 }
 
-.herospan1 {
- font-size: 25px;
-}
-
 .btn {
   font-size: 0.75rem;
   padding: 10px 25px;
@@ -299,12 +324,17 @@ Hero Section
   cursor: pointer;
   background-color: white;
   color: black;
+   transform: scale(1.1);
 }
 
 .hero-btn {
-  border: 2.5px solid #fdd923;
+  border: none;
+  background: rgb(253, 217, 35);
+   background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
   font-weight: bold;
   margin-top: 10px;
+  display: block;
+  transition: all .2s ease-in-out;
 }
 
 /**********************************
@@ -312,7 +342,9 @@ Hero Section
 ***********************************/
 
 .opening-statement {
-  background-color: #fdd923;
+  /* background-color: #fdd923; */
+  background: rgb(253, 217, 35);
+   background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
   color: #000;
   padding: 20px 0;
   display: flex;
@@ -351,6 +383,9 @@ Hero Section
   background-color: #000;
   color: #fff;
   border: none;
+}
+.keynote-speaker {
+ background-color: #f7f7f7
 }
 
 .keynote-speaker-div {
@@ -391,7 +426,7 @@ Hero Section
 .speaking-topics {
   color: black;
   padding: 20px 0 5px;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 
 .speaking-topics h2 {
@@ -408,7 +443,8 @@ Hero Section
 padding: 10px 15px;
 border-radius: 25px;
 color: black;
-background-color: #fdd923;
+background: rgb(253, 217, 35);
+ background: radial-gradient(circle, rgba(253, 217, 35, 1) 0%, rgba(253, 217, 35, 1) 100%);
 display: inline;
 }
 
@@ -500,7 +536,7 @@ display: inline;
 .company-logo-list {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 25px 0;
 }
 
@@ -718,7 +754,7 @@ BLOG PAGE
   color: black;
 }
 
-.card button {
+.card button, .video button {
   background-color: #fdd923;
   border: none;
   color: black;
@@ -959,6 +995,50 @@ color: #000;
  text-align: center;
 }
 
+.video1section {
+ margin-bottom: 20px;
+}
+
+.video-wrapper {
+ color: #000;
+ background-color: #f7f7f7;
+ padding: 60px 0 100px;
+}
+
+.videorow1 {
+ display: flex;
+}
+.video {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.video h2 {
+ margin-bottom: 5px;
+ font-size: 24px;
+ text-transform: capitalize;
+}
+
+.video button {
+ padding: 10 30px;
+ font-size: 20px;
+ font-weight: bold;
+ text-transform: uppercase;
+ margin-top: 10px;
+}
+
+.videoNoMargin {
+ margin: 0;
+}
+
+.video-back-btn {
+color: #000;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 20px;
+}
 /*----------------------alternates-----------------------------------------*/
 .twopagerimgstwo img {
  display: block;
@@ -1134,6 +1214,8 @@ margin-right: 50px;
   .hero-btn {
     margin-top: 30px;
     padding: 10px 20px;
+    margin-left: 10px;
+   
   }
 
   .hero {
@@ -1150,8 +1232,49 @@ margin-right: 50px;
     font-weight: bold;
   }
 
+    .hero-mobile {
+     display: none;
+    }
+  .hero1 {
+   background-color: #f3efef;
+   display: block;
+  }
+ 
+  .herosplit {
+   display: flex;
+   /* align-items: center;
+    justify-content: space-around; */
+   /* margin: 0 auto; */
+   color: black;
+   /* width: 80%;
+    padding: 20px; */
+  }
+ 
+  .heroleft {
+   width: 50%;
+   font-size: 30px;
+   /* font-size: 55px; */
+   font-weight: bold;
+   text-transform: uppercase;
+   margin: 0;
+   justify-content: center;
+  }
+ 
+  .heroleft p {
+   margin-bottom: 20px;
+   margin-left: 20px;
+  }
+ 
+  .heroright {
+   width: 50%;
+  }
+ 
+  .heroright img {
+   width: 800px;
+ 
+  }
   .hero-content p {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 100px;
     margin-top: 0;
     padding-top: 150px;
@@ -1163,7 +1286,7 @@ margin-right: 50px;
   }
 
   .herospan1 {
-   font-size: 45px;
+   font-size: 35px;
   }
   
   .opening-statement-btn {
@@ -1266,6 +1389,9 @@ margin-right: 50px;
 
   .about img {
    width: 55%;
+  }
+  .about img {
+   width: 45%;
   }
 
   /* FOOTER */
@@ -1405,11 +1531,12 @@ margin-right: 50px;
   }
 
   .hero {
-    height: 70vh;
-    padding-bottom: 150px;
+    /* height: 70vh;
+    padding-bottom: 150px; */
+    display: none;
   }
 
- .hero-content {
+ /* .hero-content {
    margin-left: 40px;
    padding-top: 150px;
    width: 60%;
@@ -1419,19 +1546,20 @@ margin-right: 50px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
- }
+ } */
 
  /* .herospan2 {
   font-size: 50px;
  } */
 
  .herospan1 {
-  font-size: 50px;
-
+  font-size: 60px;
  }
 
- 
-
+ .heroleft p {
+  font-size: 50px;
+  text-align: left;
+ }
   .keynote-speaker h2 {
      margin-bottom: 25px;
      margin-top: 0;
@@ -1443,6 +1571,10 @@ margin-right: 50px;
     width: 100%;
   } */
 
+    .hero-btn {
+     margin-top: 20px;
+     margin-left: 0;
+    }
   .speaking-topics-img {
     align-self: flex-start;
     display: block;
@@ -1464,7 +1596,7 @@ margin-right: 50px;
 
   .speaking-topics h4 {
     font-size: 25px;
-     padding: 10px 25px;
+     padding: 10px;
       border-radius: 25px;
       color: black;
       background-color: #fdd923;
@@ -1499,7 +1631,7 @@ margin-right: 50px;
   }
 
   .company-logo-list li {
-   margin-right: 100px;
+   margin-right: 70px;
   }
 
   /* .as-seen-in img {
@@ -1516,6 +1648,7 @@ margin-right: 50px;
 
   .about-text {
     margin-left: 40px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 1.5;
     width: 66%;
@@ -1717,23 +1850,56 @@ margin-right: 50px;
     margin-right: auto;
   }
 
-  .hero::before {
+  /* .hero::before {
     background: url("../img/hero-img.jpeg") no-repeat fixed;
     background: url("../img/jesshero.jpg") no-repeat fixed;
     background: url("../img/temp.jpg") no-repeat fixed;   
     background: url("../img/jesstesthero.jpg") no-repeat fixed;   
     background: url("../img/herotest6.jpg") no-repeat fixed; 
     background-size: cover;
+  } */
+
+  .hero1 {
+   background-color: #f3efef;
+   display: block;
   }
+
+.herosplit {
+   display: flex;
+   /* align-items: center;
+   justify-content: space-around; */
+   /* margin: 0 auto; */
+   color: black;
+   /* width: 80%;
+   padding: 20px; */
+  }
+
+  .heroleft {
+   font-size: 55px;
+   align-items: flex-start;
+  }
+
+  .heroleft p {
+   margin-bottom: 20px;
+   margin-left: 0;
+   padding-left: 0;
+  }
+  .heroright {
+   width: 50%;
+  }
+  .heroright img {
+ width: 800px;
+   
+  }
+  /* .heroright img {
+  
+   border-radius: 50%;
+  } */
 
   .hero-content {
     padding-top: 130px;
   }
 
-
-  .hero-btn {
-    margin-left: 100px;
-  }
 
   .hero-content-side2 p {
     font-size: 55px;
@@ -1751,9 +1917,6 @@ margin-right: 50px;
    color: #fdd923;
   }
 
-  .hero-btn {
-    margin-top: 20px;
-  }
 
   .opening-statement p {
     font-size: 35px;
@@ -1777,17 +1940,21 @@ margin-right: 50px;
    .keynote-speaker-div {
     display: flex;
     align-items: flex-start;
+    width: 100%;
    }
 
-  .keynote-img-div {
-   width: 55%;
-  }
-
   .keynote-speaker-text {
-    margin: 0 0 0 50px;
-    width: 45%;
+    margin-left: 0;
+    width: 55%;
   }
 
+  .keynote-img-div {
+   width: 45%;
+  }
+  
+      .keynote-speaker img {
+       width: 600px;
+      }
   .keynote-speaker .keynote-speaker-text p {
     font-size: 16px;
     margin-right: 0;
@@ -1815,9 +1982,13 @@ margin-right: 50px;
   }
 
   .speaking,
-  .about,
   .videos-articles {
     padding-top: 35px;
+  }
+
+  .about {
+   padding-top: 60px;
+   padding-bottom: 60px;
   }
 
   .learning-outcomes {
@@ -1834,7 +2005,7 @@ margin-right: 50px;
   }
 
   .work-with {
-    padding: 15px 0 25px;
+    padding: 15px 0 45px;
   }
 
   .work-with h2 {
@@ -1861,7 +2032,7 @@ margin-right: 50px;
 
   .about-text {
    line-height: 1.6;
-  
+   margin-left: 70px;
   }
 
   .about img {
@@ -1926,6 +2097,12 @@ margin-right: 50px;
     margin-top: 50px;
   }
 
+  video {
+   display: block;
+    margin: 0 auto;
+    height: auto;
+  }
+
 
 }
 
@@ -1957,17 +2134,23 @@ margin-right: 50px;
   }
 
   .keynote-speaker-text {
-   width: 90%;
+   width: 70%;
+   margin-left: 30px;
+   margin-right: 60px;
   }
 
   .keynote-speaker img {
    width: 600px;
   }
 
-  .opening-statement {
+.opening-statement {
    padding: 30px;
   }
 
+      .about-text {
+      
+       margin-left: 90px;
+      }
 }
 
 /* ==========================================================================
