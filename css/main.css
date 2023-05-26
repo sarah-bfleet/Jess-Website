@@ -271,8 +271,6 @@ Hero Section
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url("../img/mobilehero.jpg") no-repeat;
-  background: url("../img/herotest6mobile.jpg") no-repeat;
  background: url("../img/jesstestheromobile.jpg") no-repeat;
   z-index: -2;
   background-color: #000;
@@ -1097,6 +1095,42 @@ color: #000;
  width: 80%;
  margin: 0 auto;
 } 
+
+.iframevideodiv {
+ position: relative;
+ padding-bottom: 56.25%;
+ padding-top: 30px;
+ height: 0;
+ overflow: hidden;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.iframevideodiv iframe,
+.iframevideodiv object,
+.iframevideodiv embed {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+.coachingdiv1 {
+display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f7f7f7;
+  color: black;
+  text-align: center;
+  height: 100vh;
+}
+
+.coachingp1 {
+ font-size: 20px;
+ margin: 0 15px;
+ padding-bottom: 100px;
+ 
+}
 /*----------------------alternates-----------------------------------------*/
 .twopagerimgstwo img {
  display: block;
@@ -1217,9 +1251,6 @@ margin-right: 50px;
   }
 
   .hero::before {
-    background: url("../img/tabletopenpic.jpg") no-repeat;
-    background: url("../img/herotest6tablet.jpg") no-repeat;
-    background: url("../img/herotablet.jpg") no-repeat;
     background: url("../img/jesstestheromobile.jpg") no-repeat;
     background-color: #000;
     background-size: cover;
@@ -1522,6 +1553,10 @@ margin-right: 50px;
 
     .video h2 {
      font-size: 24px;
+    }
+
+    .coachingp1 {
+     font-size: 35px;
     }
 }
 /* ================================================================
@@ -1872,6 +1907,19 @@ margin-right: 50px;
      height: 100vh;
      display: block;
     }
+
+  .iframevideodiv iframe,
+  .iframevideodiv object,
+  .iframevideodiv embed {
+  
+   
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    
+   width: 60%;
+   height: 60%;
+  }
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -1911,15 +1959,6 @@ margin-right: 50px;
   .home {
     margin-right: auto;
   }
-
-  /* .hero::before {
-    background: url("../img/hero-img.jpeg") no-repeat fixed;
-    background: url("../img/jesshero.jpg") no-repeat fixed;
-    background: url("../img/temp.jpg") no-repeat fixed;   
-    background: url("../img/jesstesthero.jpg") no-repeat fixed;   
-    background: url("../img/herotest6.jpg") no-repeat fixed; 
-    background-size: cover;
-  } */
 
   .hero1 {
    background-color: #f3efef;
