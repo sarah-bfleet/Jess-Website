@@ -1305,8 +1305,11 @@ margin-right: 50px;
     margin-top: 30px;
     padding: 10px 20px;
     margin-left: 10px;
-   
   }
+
+   .hero-btn2 {
+    padding: 10px 35px;
+   }
 
   .hero {
     height: 65vh;
@@ -1372,6 +1375,11 @@ margin-right: 50px;
 
   .herospan1 {
    font-size: 35px;
+  }
+
+  .herobuttons {
+   display: flex;
+   flex-direction: column;
   }
   
   .opening-statement-btn {
@@ -1631,6 +1639,17 @@ margin-right: 50px;
   text-align: left;
  }
 
+ .herobuttons {
+  flex-direction: row;
+ }
+.hero-btn {
+ margin-top: 20px;
+ margin-left: 0;
+}
+ .hero-btn2 {
+  margin-left: 40px;
+ }
+
 .keynote-speaker h2 {
    margin-bottom: 25px;
    margin-top: 0;
@@ -1649,11 +1668,6 @@ margin-right: 50px;
 .speakingheader {
  font-size: 50px;
 }
-
-.hero-btn {
-  margin-top: 20px;
-  margin-left: 0;
- }
 
   .speaking-topics-img {
     display: block;
@@ -1917,8 +1931,8 @@ margin-right: 50px;
      left: 50%;
      transform: translate(-50%, -50%);
     
-   width: 60%;
-   height: 60%;
+   width: 40%;
+   height: 40%;
   }
 }
 /* ================================================================
