@@ -1041,6 +1041,9 @@ color: #000;
   align-items: center;
 }
 
+.video video, .video img {
+ width: 80%;
+}
 /* .video1section video {
  display: flex;
  align-items: center;
@@ -1054,6 +1057,9 @@ color: #000;
 
 .videorow1 {
  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 .video {
  display: flex;
@@ -1068,6 +1074,9 @@ color: #000;
  text-transform: capitalize;
 }
 
+.video1 {
+ margin-bottom: 30px;
+}
 .video button {
  padding: 10 30px;
  font-size: 20px;
@@ -1302,14 +1311,15 @@ margin-right: 50px;
   }
 
   .hero-btn {
-    margin-top: 30px;
+    margin-top: 0;
     padding: 10px 20px;
     margin-left: 10px;
+    font-size: 18px;
   }
 
-   .hero-btn2 {
-    padding: 10px 35px;
-   }
+  .hero-btn2 {
+   margin-top: 8px;
+  }
 
   .hero {
     height: 65vh;
@@ -1339,6 +1349,7 @@ margin-right: 50px;
   }
  
   .heroleft {
+   padding-bottom: 0;
    width: 50%;
    font-size: 30px;
    /* font-size: 55px; */
@@ -1351,6 +1362,7 @@ margin-right: 50px;
   .heroleft p {
    margin-bottom: 20px;
    margin-left: 20px;
+   padding-top: 5px;
   }
  
   .heroright {
@@ -1380,6 +1392,7 @@ margin-right: 50px;
   .herobuttons {
    display: flex;
    flex-direction: column;
+   padding-left: 40px;
   }
   
   .opening-statement-btn {
@@ -1641,6 +1654,7 @@ margin-right: 50px;
 
  .herobuttons {
   flex-direction: row;
+  padding-left: 0;
  }
 .hero-btn {
  margin-top: 20px;
@@ -1922,18 +1936,23 @@ margin-right: 50px;
      display: block;
     }
 
-  .iframevideodiv iframe,
+    .video1, .video2 {
+     width: 50%;
+    }
+    .video2 {
+     width: 45%;
+    }
+
+  /* .iframevideodiv iframe,
   .iframevideodiv object,
   .iframevideodiv embed {
-  
-   
      top: 30%;
      left: 50%;
      transform: translate(-50%, -50%);
     
    width: 40%;
    height: 40%;
-  }
+  } */
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
