@@ -1,0 +1,2492 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,600&family=Didact+Gothic&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,200;1,300&display=swap');
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+   * A better looking default horizontal rule
+   */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+   * Remove default fieldset styles.
+   */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+   * Allow only vertical resizing of textareas.
+   */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+     
+     Author's custom styles
+  
+     ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  color: white;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+ text-transform: uppercase;
+}
+
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+}
+
+nav {
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #000;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+header {
+  display: none;
+}
+
+.logo {
+  font-weight: 900;
+}
+
+.headingupper {
+ text-transform: uppercase;
+ color: #000;
+ margin-top: 0;
+}
+
+/*********************** 
+Mobile Nav 
+************************/
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+.topnav #myLinks a {
+ text-align: center;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnavlinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #fff;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+a.active {
+  font-size: 20px;
+}
+/**********************************
+Hero Section  
+***********************************/
+.hero1 {
+ display: none;
+}
+
+.hero-mobile {
+ background-color: #f3efef;
+ display: block;
+ color: black;
+}
+
+.hero {
+  position: relative;
+  height: 50vh;
+}
+
+.heroleft {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 50px;
+}
+
+.heroleft p {
+ font-size: 35px;
+ text-transform: uppercase;
+ text-align: center;
+ margin-top: 0;
+ margin-bottom: 0;
+ padding: 50px 30px 0;
+}
+
+.herospan1 {
+ font-size: 40px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+ background: url("../img/jesstestheromobile.jpg") no-repeat;
+  z-index: -2;
+  background-color: #000;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-content {
+ margin-left: 10px;
+ padding-top: 100px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 60%;
+ 
+ padding-bottom: 30px;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  padding: 20px 0 0;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  font-size: 0.75rem;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: black;
+  background-color: #fdd923;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+   transform: scale(1.1);
+}
+
+.hero-btn {
+  border: none;
+  background: rgb(253, 217, 35);
+   background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+/**********************************
+    MAIN 
+***********************************/
+
+.opening-statement {
+  /* background-color: #fdd923; */
+  background: rgb(253, 217, 35);
+   background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
+  color: #000;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openp1 {
+ margin: 0 12px;
+}
+
+.openp1, .openp2 {
+ font-size: 20px;
+ text-align: center;
+}
+
+.openp2 {
+  margin: 20px 10px 15px;
+  font-weight: bold;
+}
+
+.opening-statement-btn,
+.keynote-btn {
+  font-size: 1rem;
+  padding: 15px 35px;
+}
+
+.btn.keynote-btn {
+ background-color: black;
+ color: white;
+  border: 2px solid #fdd923;
+}
+
+.opening-statement-btn {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.keynote-speaker {
+ background-color: #f7f7f7
+}
+
+.keynote-speaker-div {
+  margin: 0 10px;
+  padding: 30px 0 40px;
+}
+
+.keynote-speaker-text {
+  color: #000;
+  font-size: 16px;
+  margin: 0 15px;
+}
+
+.keynote-speaker-text p {
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+
+.keynote-speaker-text h2 {
+  font-weight: bold;
+}
+
+.keynote-speaker img {
+  width: 100%;
+}
+
+.btn.keynote-btn {
+  margin: 10px 0 30px;
+  border: none;
+   border: 2px solid #fdd923;
+}
+
+.keynote-btn:hover {
+  cursor: pointer;
+  border: 2px solid #fdd923;
+  color: #fff;
+}
+
+.speaking-topics {
+ background-color: #000;
+ /* background: rgb(103, 102, 117);
+  background: linear-gradient(90deg, rgba(103, 102, 117, 1) 0%, rgba(82, 81, 93, 1) 35%); */
+  color: #F8F8F8;
+  padding: 20px 0 5px;
+ 
+  /* background-color: #f7f7f7; */
+}
+
+.speakingtopicsmain p {
+ line-height: 1.6;
+}
+
+/* .speakingtopicsmain {
+ font-family: 'Montserrat', sans-serif;
+} */
+
+.speaking-topics h2 {
+  margin-bottom: 20px;
+}
+
+.speaking-topics-div2 h3 {
+  text-transform: capitalize;
+  margin: 0 0 30px;
+  font-size: 22px;
+}
+
+/* .speaking-topics h4 {
+padding: 10px 15px;
+border-radius: 25px;
+color: black;
+background: rgb(253, 217, 35);
+ background: radial-gradient(circle, rgba(253, 217, 35, 1) 0%, rgba(253, 217, 35, 1) 100%);
+display: inline;
+} */
+
+.speaking-topics-div2 {
+  margin: 0 22px 25px;
+}
+
+.speaking-topic {
+  font-weight: bold;
+}
+
+.speaking-topics button {
+  margin-top: 30px;
+}
+
+.speaking-topics-img {
+  display: none;
+}
+
+.speaking-topics-side1 {
+ margin: 30px;
+}
+
+.speakingtopicsheaderdiv {
+  color: #fdd923;
+}
+
+.speakingtopicsheaderdiv h4 {
+ display: block;
+}
+
+  .speakingtopicheader1 {
+   font-size: 20px;
+  }
+
+  .speakingtopicheader2 {
+   font-size: 18px;
+  }
+
+.speakingtopicheader2 {
+ font-weight: 600;
+
+}
+
+.speaking-topics-img-tablet {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.speakingheader {
+ font-size: 30px;
+ font-weight: 500;
+}
+
+.learning-outcomes {
+  margin: 30px 0;
+}
+
+.learning-outcomes h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.learning-outcomes ul {
+  list-style-type: disc;
+}
+
+.learning-outcomes li {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.learning-outcomes p {
+ margin: 5px 0;
+}
+
+.speaking-topics-closing {
+ font-weight: bold;
+}
+
+.collapsible {
+  cursor: pointer;
+  display: inline;
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+
+.collapsible:after {
+  color: black;
+  font-size: 25px;
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.logo-h2 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.company-logos {
+  padding: 25px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+
+.company-logo-list1 {
+ margin-top: 0;
+}
+
+.company-logo-list li {
+ margin-right: 10px;
+}
+.amex-desktop::before {
+  display: none;
+}
+
+.logo2,
+.fa-cc-amex,
+.jnj-logo,
+.lvmh-logo {
+  background-color: gray;
+}
+
+.smlogo, .bglogo {
+ width: 50px;
+}
+
+.as-seen-in {
+  color: #000;
+  text-align: center;
+}
+
+.as-seen-in h2 {
+  margin: 0;
+}
+
+.as-seen-in-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 20px; */
+}
+
+.as-seen-in-list li {
+  margin: 0 10px;
+}
+
+.nytimeslogo {
+ width: 100px;
+}
+
+
+/********************************************
+                   ABOUT 
+*********************************************/
+
+.about {
+  padding: 40px 0;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.about .wrapper {
+  padding: 0;
+}
+
+.about img {
+  border: 2px solid white;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.about-text {
+  text-align: left;
+  margin: 0 15px;
+}
+
+.about h2 {
+  margin-top: 29px;
+  line-height: .75;
+}
+
+/********************************************
+                   WORK WITH
+*********************************************/
+
+.work-with {
+  color: #000;
+  text-align: center;
+  padding: 20px 0 60px;
+  background-color: #eaeaea;
+}
+
+.work {
+  background-color: #000;
+  color: #fff;
+  padding: 35px 25px;
+  border: 5px solid #fdd923;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.work h3 {
+  text-transform: capitalize;
+}
+
+/********************************************
+                   FOOTER
+*********************************************/
+
+footer {
+  background-color: #000;
+  padding: 50px 0 10px;
+  text-align: center;
+  clear: right;
+}
+
+.contact p {
+  color: white;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+footer span {
+  padding-bottom: 0;
+}
+
+footer .wrapper {
+  padding-bottom: 5px;
+  padding-top: 0;
+}
+
+footer ul li {
+  display: inline;
+  font-size: 2.5em;
+}
+
+footer i {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: #fdd923;
+}
+
+footer i:hover,
+footer a:hover {
+  color: white;
+}
+
+.follow {
+  margin: 30px 0 50px;
+}
+
+.contact-email {
+  margin-top: 25px;
+}
+
+.contact-email a {
+  color: #fdd923;
+  font-size: 18px;
+}
+
+.copyright {
+  margin-top: 15px;
+}
+
+/*------------------------------------------------------
+COMING SOON PAGES 
+------------------------------------------------------*/
+
+.coming-soon {
+  background-color: #f7f7f7;
+  color: black;
+  text-align: center;
+  height: 100vh;
+}
+
+.coming-soon p {
+  font-size: 60px;
+  padding-top: 150px;
+  margin: 0;
+}
+
+/*****************************************
+BLOG PAGE
+*****************************************/
+.blog {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.blog h2 {
+  font-size: 20px;
+}
+
+.card h5 {
+  font-style: italic;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 10px;
+  color: black;
+}
+
+.card button, .video button {
+  background-color: #fdd923;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.card button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.hidecard {
+ visibility: hidden;
+}
+
+article {
+  margin-bottom: 60px;
+  color: #000;
+  padding: 50px 0 80px;
+}
+
+.article-main {
+  background-color: #f7f7f7;
+}
+
+.article-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.article-wrapper p {
+  line-height: 1.6;
+}
+
+.article-wrapper img {
+  margin-bottom: 30px;
+}
+
+article h2 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+.article-list {
+  font-size: 18px;
+  list-style-type: decimal;
+  padding-left: 50px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-header h2,
+.heading-2 {
+  font-weight: 600;
+}
+
+.article2image,
+.article5img,
+.article6img {
+  width: 400px;
+}
+
+.article6pic {
+  padding: 10px 0;
+}
+
+.article6list {
+  margin-bottom: 18px;
+}
+
+.first-p {
+  margin-top: 7px;
+}
+
+.article-btn {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.next-btn {
+  float: right;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.article-source {
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+.bold-underline {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.article-3-list li {
+  font-style: italic;
+}
+
+.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.lower-alpha li {
+  margin: 15px 0 15px 50px;
+}
+
+.article-4-list {
+  padding-left: 0;
+  font-size: 18px;
+  list-style-type: decimal;
+}
+
+.article-4-list li {
+  margin: 15px 0;
+}
+
+.heading-2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 8px 0 30px;
+}
+
+/*========================
+MEETING PLANNERS
+========================*/
+
+.hrbottom {
+ margin-top: 30px;
+}
+
+.hrtop {
+margin-bottom: 30px;
+}
+
+.mtgplannerspage h1, .mtgplannerspage h2 {
+ font-weight: 400;
+}
+
+.mtgplannerspage h1 {
+ font-size: 20px;
+}
+
+.mtgplannerspage h2 {
+ text-transform: capitalize;
+ font-size: 30px;
+}
+
+.jessbiocontainer, .speakingkitcontainer {
+/* background-color: #f7f7f7; */
+padding: 30px 0;
+}
+
+.jessbio, .speakingkitdiv {
+ color: #000;
+ margin: 50px auto;
+}
+
+.mtgplannersdiv1 {
+ margin: 20px auto;
+ width: 80%;
+}
+
+.jessbiop3, .speakingkitp {
+ margin-bottom: 40px;
+}
+
+.jessbiotext, .speakingkittext {
+ max-width: 80%;
+ margin: 40px auto 0;
+}
+
+.flexdiv2
+ {
+ margin-top: 20px;
+}
+
+.jessbiotext a, .speakingkittext a {
+ display: block;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.jessbio img, .speakingkitdiv img {
+ display: block;
+ margin: 0 auto;
+}
+
+.twopagerimgs {
+ margin: 0 auto;
+}
+
+
+.twopagerimgs img {
+ margin-bottom: 20px;
+ width: 500px;
+}
+
+a.downloadbtn {
+ background-color: #fdd923;
+ text-transform: uppercase;
+ padding: 20px;
+ border-radius: 30px;
+ color: #000;
+ font-weight: bold;
+ width: 60%;
+}
+
+.mtgplannerssection2 {
+margin: 50px auto;
+max-width: 80%;
+color: #000;
+}
+
+.block {
+ display: block;
+ width: 40%;
+ margin-top: 20px;
+ text-align: center;
+}
+
+#video-container {
+ position: relative;
+ width: 100%;
+ height: 65vh;
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+}
+#video-page {
+ position: relative;
+ width: 100%;
+ height: 95vh;
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+}
+#player {
+
+ --video--width: 16;
+ --video--height: 9;
+ --video--width: 950;
+ --video--height: 540;
+
+ position: relative;
+ padding-bottom: calc(var(--video--height) / var(--video--width) * 100%);
+ /* 41.66666667% */
+ overflow: hidden;
+ background: black;
+}
+
+#player iframe,
+#player object,
+#player embed {
+ position: absolute;
+ top: 0;
+ left: 0;
+ border: none;
+} 
+
+#watch-now-button {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+}
+
+#watch-now-button button {
+ padding: 10px 15px;
+ background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
+ font-weight: bold;
+ text-transform: uppercase;
+ border: none;
+ cursor: pointer;
+ transition: all .2s ease-in-out;
+ color: black;
+ border-radius: 25px;
+ font-size: 14px;
+}
+
+.video video, .video img {
+ width: 80%;
+}
+
+.video-wrapper {
+ color: #000;
+ background-color: #f7f7f7;
+ padding: 60px 0 100px;
+}
+
+.videorow1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.video {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 40px;
+}
+
+.video h2 {
+ margin-bottom: 5px;
+ font-size: 18px;
+ text-transform: capitalize;
+}
+
+.video1 {
+ margin-bottom: 30px;
+}
+.video button {
+ padding: 10 30px;
+ font-size: 20px;
+ font-weight: bold;
+ text-transform: uppercase;
+ margin-top: 10px;
+}
+
+.videoNoMargin {
+ margin: 0;
+}
+
+.video-back-btn {
+color: #000;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 20px;
+padding: 17px 0 0 15px;
+}
+
+.video-back-btn a {
+color: #000;
+}
+
+.video1sectiondiv {
+ width: 80%;
+ margin: 0 auto;
+} 
+
+#vimeomobile {
+ display: block;
+}
+
+#vimeotablet {
+ display: none;
+}
+
+#vimeodesktop {
+ display: block;
+}
+
+.coachingdiv1 {
+display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f7f7f7;
+  color: black;
+  text-align: center;
+  height: 100vh;
+}
+
+.coachingp1 {
+ font-size: 20px;
+ margin: 0 15px;
+ padding-bottom: 100px;
+ 
+}
+/*----------------------alternates-----------------------------------------*/
+.twopagerimgstwo img {
+ display: block;
+}
+
+.flexdiv2two {
+ color: black;
+float: right;
+width: 60%;
+margin-right: 50px;
+}
+
+.downloadbtnalt {
+ margin: 30px 0;
+}
+
+/* .mtgplannersdiv {
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+ justify-content: flex-end;
+ align-items: flex-start;
+} */
+/* ==========================================================================
+     Helper classes
+     ========================================================================== */
+
+/*
+   * Hide visually and from screen readers
+   */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+   * Hide visually and from screen readers, but maintain layout
+   */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ====================================
+  ======================================
+       Media Queries - 
+     =======================================
+     =================================== */
+
+@media only screen and (min-width: 500px) {
+  /* General styles */
+
+  .hero {
+    height: 70vh;
+    padding-bottom: 150px;
+  }
+
+  .hero::before {
+    background: url("../img/jesstestheromobile.jpg") no-repeat;
+    background-color: #000;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .hero-content {
+   padding-top: 300px;
+  }
+}
+/* ====================================
+  ======================================
+       Media Queries - TABLET 
+     =======================================
+     =================================== */
+
+@media only screen and (min-width: 768px) {
+  /* General styles */
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  a.active,
+  a.icon {
+    font-size: 30px;
+  }
+
+  #myLinks a {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+
+  .hero-btn {
+    margin-top: 0;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .hero-btn2 {
+   margin-top: 8px;
+  }
+
+  .hero {
+    height: 65vh;
+    padding-bottom: 100px;
+  }
+
+  .hero h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    width: 75%;
+    text-align: left;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+
+    .hero-mobile {
+     display: none;
+    }
+  .hero1 {
+   background-color: #f3efef;
+   display: block;
+  }
+ 
+  .herosplit {
+   display: flex;
+   color: black;
+  }
+ 
+  .heroleft {
+   padding-bottom: 0;
+   width: 50%;
+   font-size: 30px;
+   /* font-size: 55px; */
+   font-weight: bold;
+   text-transform: uppercase;
+   margin: 0;
+   justify-content: center;
+  }
+ 
+  .heroleft p {
+   margin-bottom: 20px;
+   margin-left: 20px;
+   padding-top: 5px;
+  }
+ 
+  .heroright {
+   width: 50%;
+  }
+ 
+  .heroright img {
+   width: 800px;
+ 
+  }
+  .hero-content p {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 150px;
+    font-weight: bold;
+  }
+
+  .hero-content {
+   padding-top: 350px;
+  }
+
+  .herospan1 {
+   font-size: 35px;
+  }
+
+  .herobuttons {
+   display: flex;
+   flex-direction: column;
+   padding-left: 40px;
+  }
+  
+  .opening-statement-btn {
+   margin-top: 0;
+   margin-bottom: 10px;
+  }
+
+  .openp1, .openp2 {
+   font-size: 30px;
+   width: 70%;
+  }
+  
+  .keynote-speaker {
+    padding: 30px 0 0;
+  }
+
+  .keynote-speaker-text h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .keynote-speaker-text {
+    margin: 0;
+    margin-left: 25px;
+  }
+
+ .keynote-img-div {
+   width: 73%;
+   margin: 0 auto;
+  }
+
+  .speaking-topics {
+    padding: 30px 0 20px;
+  }
+
+  .speaking-topics h2 {
+    margin-top: 30px;
+  }
+
+  .speaking-topics-div2 h3 {
+    font-size: 26px;
+  }
+
+  .speaking-topics-img {
+    display: none;
+  }
+
+  .work {
+   width: 30%;
+   height: 150px;
+   margin: 0 5px;
+  }
+
+  .work-with-div {
+    display: flex;
+    
+    align-items: center;
+  }
+  /* COMPANY LOGOS */
+
+ .smlogo, .bglogo {
+  width: 80px;
+ }
+
+  .amex-desktop::before {
+    display: block;
+  }
+
+  .amex-mobile::before {
+    display: none;
+  }
+
+  .logo-h2 {
+    font-size: 25px;
+  }
+
+  .as-seen-in-list li {
+    margin: 0 20px;
+  }
+
+
+  /* ABOUT */
+
+  .about h3 {
+    margin: 40px 0;
+    font-size: 40px;
+  }
+
+  .about p {
+    margin-top: 0;
+  }
+
+  .about img {
+   width: 55%;
+  }
+  .about img {
+   width: 45%;
+  }
+
+  /* FOOTER */
+
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-email a {
+    font-size: 25px;
+  }
+
+  .contact-email {
+    margin: 50px 0 30px;
+  }
+
+  #contact {
+    padding: 0 40px;
+  }
+
+  .contact p {
+    color: white;
+    margin: 0 10px;
+    font-size: 28px;
+  }
+
+  /*---------------------------
+         ARTICLES 
+  -----------------------------*/
+  .article-main p {
+    font-size: 18px;
+  }
+
+  .mtgplannerspage h2 {
+   text-transform: capitalize;
+   font-size: 40px;
+  }
+
+  article h2 {
+    font-size: 35px;
+  }
+  #heading-2 {
+    font-size: 28px;
+    margin: 0 0 30px;
+  }
+
+  .card {
+    margin: 30px auto;
+    width: 50%;
+  }
+
+  .flexdiv2 {
+   margin-top: 40px;
+  }
+
+  .jessbiotext a, .speakingkittext a {
+     width: 50%;
+    }
+
+    .twopagerimgs {
+     display: block;
+     width: 50%;
+     margin-bottom: 20px;
+     margin: 10px 0;
+    }
+    /* .block {
+     display: block;
+     width: 30%;
+     margin-top: 20px;
+     text-align: center;
+    } */
+
+    a.downloadbtn {
+     width: 40%;
+    }
+
+    .video h2 {
+     font-size: 24px;
+    }
+
+    .coachingp1 {
+     font-size: 35px;
+    }
+
+   #vimeotablet {
+    display: block;
+   }
+
+   #vimeodesktop {
+    display: none;
+   }
+
+   #vimeomobile {
+    display: none;
+   }
+}
+/* ================================================================
+      LAPTOP MEDIA QUERY
+  ====================================================================*/
+
+@media only screen and (min-width: 1000px) {
+  /* General styles */
+
+  header {
+    display: block;
+    padding-top: 0;
+  }
+
+    .topnav a.icon {
+   margin-right: 40px; 
+  }
+
+  .active {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .logo h2 {
+   font-size: 20px;
+   margin: 0;
+  }
+
+  .bglogo {
+   width: 100px;
+  }
+
+   .nytimeslogo {
+    width: 150px;
+   }
+
+  .header-wrapper {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    margin-right: 20px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .hero {
+    display: none;
+  }
+
+ .herospan1 {
+  font-size: 60px;
+ }
+
+ .heroleft p {
+  font-size: 50px;
+  text-align: left;
+ }
+
+ .herobuttons {
+  flex-direction: row;
+  padding-left: 0;
+ }
+.hero-btn {
+ margin-top: 20px;
+ margin-left: 0;
+}
+ .hero-btn2 {
+  margin-left: 40px;
+ }
+
+.keynote-speaker h2 {
+   margin-bottom: 25px;
+   margin-top: 0;
+   line-height: .75;
+  }
+
+ .speaking-topics-side1  {
+  width: 55%;
+  margin-left: 30px;
+ }
+.speaking-topics-side2 {
+ width: 45%;
+ margin-left: 50px;
+}
+ 
+.speakingheader {
+ font-size: 35px;
+}
+
+  .speaking-topics-img {
+    display: block;
+    width: 700px;
+  }
+
+  .speaking-topics-img-tablet {
+    display: none;
+  }
+
+  .speaking-topics h2 {
+   
+    margin-top: 0;
+  }
+
+  .speaking-topics h3 {
+    font-size: 22px;
+  }
+
+  .speakingtopicheader1 {
+   font-size: 26px;
+  }
+
+ .speakingtopicheader2 {
+  font-size: 24px;
+ }
+
+  .speaking-topics h5 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .speaking-topics li,  .speaking-topics p {
+    font-size: 16px;
+  }
+
+  .speaking-topics-closing  {
+     font-size: 20px;
+     font-style: italic;
+    }
+  
+ .company-logo-list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  margin: 25px 50px;
+  text-align: center;
+ }
+
+  .company-logo-list1 {
+   margin-top: 5px;
+  }
+
+  .company-logo-list li {
+   margin-right: 70px;
+  }
+
+  /* .as-seen-in img {
+    width: 100px;
+  } */
+
+  .about .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+   width: 100%;
+   margin-left: 40px;
+  }
+
+  .about-text {
+    margin-left: 40px;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 66%;
+    width: 45%;
+  }
+
+  .about h2 {
+     margin-top: 0;
+    }
+
+ .about-pics {
+    width: 40%;
+    margin: 0;
+  }
+
+ .work-with-div {
+  margin: 0 20px;
+  justify-content: center;
+  flex-direction: row;
+ }
+
+  /*BLOG PAGE*/
+
+  /* Add a card effect for articles */
+
+  .row1,
+  .row2, 
+  .row3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 30px;
+    padding: 10px 30px 30px;
+    width: 30%;
+  }
+
+  .card button {
+    margin-top: auto;
+  }
+
+  .card1 a {
+    margin-top: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card a {
+    margin-top: auto;
+  }
+
+  .card4 img {
+    height: 245px;
+    width: 211px;
+  }
+
+  .card7 img {
+    height: 245px;
+    width: 200px;
+  }
+
+  .article-wrapper,
+  .blog-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .article-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .article-text p,
+  .article-text li {
+    line-height: 1.75;
+  }
+
+  /*--------------------
+  MEETING PLANNERS PAGE
+  ----------------------*/
+    .mtgplannerspage h1 {
+     font-size: 20px;
+    }
+  
+    .jessbiocontainer, .speakingkitcontainer {
+     padding: 30px 0;
+    }
+  
+    .jessbio, .speakingkitdiv {
+     color: #000;
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     margin: 50px auto;
+     width: 70%;
+    }
+  
+    .jessbio img, .speakingkitdiv img {
+     margin-right: 100px;
+    }
+  
+    .jessbiotext, .speakingkittext {
+     align-self: flex-start;
+     width: 60%;
+     margin-top: 0;
+    }
+
+    .jessbioimgdiv, .speakingkitimgdiv {
+     width: 40%;
+    }
+     .speakingkitimgdiv img {
+     width: 50%;
+    }
+
+    .twopagerdiv {
+     width: 50%;
+    }
+
+   .jessbiotext a, .speakingkittext a {
+    display: inline;
+    text-align: center;
+   }
+  
+    .twopagerimgs {
+     display: flex;
+     flex-direction: column;
+     width: 35%;
+     margin: 0;
+     margin-right: 100px;
+    }
+
+    .twopagerdiv {
+     margin-left: auto;
+     padding-right: 100px;
+     padding-bottom: 50px;
+    }
+  
+    .flexdiv2 {
+     width: 65%;
+     align-self: flex-start;
+     margin: 0 auto;
+    }
+  
+    .twopagerimgs img {
+     margin-bottom: 20px;
+     width: 300px;
+    }
+  
+    a.downloadbtn {
+     background-color: #fdd923;
+     text-transform: uppercase;
+     padding: 20px;
+     border-radius: 30px;
+     color: #000;
+     font-weight: bold;
+     width: 40%;
+    }
+  
+    .mtgplannerssection2 {
+     display: flex;
+     justify-content: space-between;
+     margin: 50px auto;
+     max-width: 80%;
+     color: #000;
+    }
+
+    .video1sectiondiv {
+     width: 80%;
+     margin: 20px auto 0;
+    }
+
+    .video1section {
+     height: 100vh;
+     display: block;
+    }
+
+    .video1, .video2 {
+     width: 50%;
+    }
+   
+#video-container {
+ height: 75vh;
+}
+
+#watch-now-button button {
+ padding: 20px 25px;
+ border-radius: 25px;
+ font-size: 18px;
+}
+
+#vimeomobile {
+ display: none;
+}
+#vimeotablet {
+ display: none;
+}
+
+#vimeodesktop {
+ display: block;
+}
+
+
+  /* .iframevideodiv iframe,
+  .iframevideodiv object,
+  .iframevideodiv embed {
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    
+   width: 40%;
+   height: 40%;
+  } */
+}
+/* ================================================================
+      LAPTOP MEDIA QUERY
+  ====================================================================*/
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  h4
+   {
+    font-size: 1.25rem;
+  }
+
+  .wrapper {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  a.active {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+
+  .navbar {
+    margin-right: 40px;
+  }
+
+  .home {
+    margin-right: auto;
+  }
+
+  .hero1 {
+   background-color: #f3efef;
+   display: block;
+  }
+
+.herosplit {
+   display: flex;
+   /* align-items: center;
+   justify-content: space-around; */
+   /* margin: 0 auto; */
+   color: black;
+   /* width: 80%;
+   padding: 20px; */
+  }
+
+  .heroleft {
+   font-size: 55px;
+   align-items: flex-start;
+   margin-left: 30px;
+  }
+
+  .heroleft p {
+   margin-bottom: 20px;
+   margin-left: 0;
+   padding-left: 0;
+  }
+  .heroright {
+   width: 50%;
+  }
+  .heroright img {
+ width: 800px;
+   
+  }
+  /* .heroright img {
+  
+   border-radius: 50%;
+  } */
+
+  .hero-content {
+    padding-top: 130px;
+  }
+
+
+  .hero-content-side2 p {
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+   
+  }
+   
+  .herospan1 {
+    font-size: 65px;
+   }
+
+  .openspan2 {
+   color: #fdd923;
+  }
+
+
+  .opening-statement p {
+    font-size: 35px;
+  }
+
+  .openp2 {
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* KEYNOTE SPEAKER & SPEAKING TOPICS */
+
+    .keynote-speaker {
+     padding: 30px 30px 0;
+    }
+
+   .keynote-speaker-div {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+   }
+
+  .keynote-speaker-text {
+    margin-left: 100px;
+    width: 55%;
+  }
+
+  .keynote-img-div {
+   width: 45%;
+  }
+  
+  .keynote-speaker img {
+   width: 600px;
+  }
+
+  .keynote-speaker .keynote-speaker-text p {
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  h3.keynote {
+   font-size: 28px;
+   color: #fff;
+   text-transform: capitalize;
+  }
+
+  .btn.keynote-btn {
+   margin-top: 20px;
+  }
+
+  .speakingtopicsmain {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 0 50px 50px;
+   width: 100%;
+  }
+
+  /* .speaking-topics-div {
+   width: 50%;
+  } */
+
+  /* .speaking-topics-div {
+    margin: 0 0 0 20px;
+    padding: 30px 0 0 20px;
+     width: 100%;
+  } */
+
+  /* .speakingtopic2 {
+   margin-top: 50px;
+  } */
+
+  /* .speakingtopic1 p {
+   line-height: 30px;
+  } */
+
+  .learning-outcomes ul {
+   line-height: 32px;
+  }
+
+  .speaking,
+  .videos-articles {
+    padding-top: 35px;
+  }
+
+  .about {
+   padding-top: 60px;
+   padding-bottom: 60px;
+  }
+
+  .learning-outcomes {
+    margin: 10px 0 30px;
+  }
+
+  /* .learning-outcomes h5 {
+    margin-top: 40px;
+  } */
+
+  /* .speakingtopic2 {
+   margin-top: 60px;
+  } */
+
+  .learning-outcomes li {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .work-with {
+    padding: 15px 0 45px;
+  }
+
+  .work-with h2 {
+   margin-top: 15px;
+  }
+
+  .work-with-div {
+    margin: 0 70px;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .work {
+    width: 15%;
+    /* height: 120px; */
+    padding: 25px;
+    margin: 0 30px;
+  }
+  /* ABOUT */
+/* 
+  .about .content-wrapper {
+    justify-content: center;
+  } */
+
+  .about-text {
+   line-height: 1.6;
+   margin-left: 70px;
+  }
+
+  .about img {
+   width: 25%;
+   margin: 0;
+  }
+
+  .logo-flexbox {
+   display: flex;
+   align-items: center;
+  }
+
+  .logo-h2 {
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .as-seen-in-list li {
+    margin: 0 40px;
+  }
+
+  /* FOOTER */
+
+  footer img {
+   width: 25%;
+  }
+  .footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-text {
+    padding: 20px 0 30px;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
+  }
+
+  .hire a {
+    font-size: 1.25rem;
+  }
+
+  .copyright .span {
+    font-size: 1.125rem;
+  }
+
+  .follow {
+    margin-left: 120px;
+  }
+
+  .contact-email {
+    margin-top: 0;
+  }
+
+  .articles-btn {
+    margin-top: 50px;
+  }
+
+  video {
+   display: block;
+    margin: 0 auto 40px;
+    height: auto;
+  }
+
+    #vimeomobile {
+     display: none;
+    }
+  
+    #vimeotablet {
+     display: none;
+    }
+  
+    #vimeodesktop {
+     display: block;
+    }
+
+}
+
+/* ================================================================
+      LARGE DESKTOP MEDIA QUERY
+  ====================================================================*/
+
+@media only screen and (min-width: 1600px) {
+  .header-wrapper,
+  .hero-content {
+    max-width: 1800px;
+  }
+
+  .hero-content {
+    padding-top: 250px;
+    width: 45%;
+  }
+
+  .hero-content p {
+   font-size: 65px;
+  }
+
+  .herospan1 {
+   font-size: 75px;
+  }
+
+  .heroleft {
+   margin-left: 0;
+  }
+
+  .keynote-speaker-div {
+   justify-content: center;
+  }
+
+  .keynote-speaker-text {
+   width: 70%;
+   margin-right: 60px;
+   margin-left: 100px;
+  }
+
+  .keynote-speaker img {
+   width: 600px;
+  }
+
+.opening-statement {
+   padding: 30px;
+  }
+
+      .about-text {
+      
+       margin-left: 90px;
+      }
+}
+
+/* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
