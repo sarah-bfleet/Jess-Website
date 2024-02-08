@@ -199,6 +199,11 @@ Mobile Nav
   text-decoration: none;
   font-size: 17px;
   display: block;
+  
+}
+
+.topnav #myLinks a {
+ text-align: center;
 }
 
 /* Style the hamburger menu */
@@ -210,7 +215,7 @@ Mobile Nav
 }
 
 /* Add a grey background color on mouse-over */
-.topnav a:hover {
+.topnavlinks a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -562,13 +567,17 @@ display: inline;
   font-size: 20px;
   color: black;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   margin-top: 0;
 }
 
 .company-logos {
   padding: 25px 0;
-  background-color: #eaeaea;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .company-logo-list {
@@ -667,6 +676,7 @@ display: inline;
   color: #000;
   text-align: center;
   padding: 20px 0 60px;
+  background-color: #eaeaea;
 }
 
 .work {
@@ -961,26 +971,26 @@ margin-bottom: 30px;
  font-size: 30px;
 }
 
-.jessbiocontainer {
+.jessbiocontainer, .speakingkitcontainer {
 /* background-color: #f7f7f7; */
 padding: 30px 0;
 }
 
-.jessbio {
+.jessbio, .speakingkitdiv {
  color: #000;
  margin: 50px auto;
 }
 
 .mtgplannersdiv1 {
- margin: 50px auto;
+ margin: 20px auto;
  width: 80%;
 }
 
-.jessbiop3 {
+.jessbiop3, .speakingkitp {
  margin-bottom: 40px;
 }
 
-.jessbiotext {
+.jessbiotext, .speakingkittext {
  max-width: 80%;
  margin: 40px auto 0;
 }
@@ -990,13 +1000,13 @@ padding: 30px 0;
  margin-top: 20px;
 }
 
-.jessbiotext a {
+.jessbiotext a, .speakingkittext a {
  display: block;
  text-align: center;
  margin-bottom: 10px;
 }
 
-.jessbio img {
+.jessbio img, .speakingkitdiv img {
  display: block;
  margin: 0 auto;
 }
@@ -1034,20 +1044,69 @@ color: #000;
  text-align: center;
 }
 
-.video1section {
- height: 80vh;
- margin-bottom: 20px;
- display: flex;
-  align-items: center;
+#video-container {
+ position: relative;
+ width: 100%;
+ height: 65vh;
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+}
+#video-page {
+ position: relative;
+ width: 100%;
+ height: 95vh;
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+}
+#player {
+
+ --video--width: 16;
+ --video--height: 9;
+ --video--width: 950;
+ --video--height: 540;
+
+ position: relative;
+ padding-bottom: calc(var(--video--height) / var(--video--width) * 100%);
+ /* 41.66666667% */
+ overflow: hidden;
+ background: black;
+}
+
+#player iframe,
+#player object,
+#player embed {
+ position: absolute;
+ top: 0;
+ left: 0;
+ border: none;
+} 
+
+#watch-now-button {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+}
+
+#watch-now-button button {
+ padding: 10px 15px;
+ background: radial-gradient(circle, rgba(253, 217, 35, 1) 29%, rgba(237, 217, 116, 1) 100%);
+ font-weight: bold;
+ text-transform: uppercase;
+ border: none;
+ cursor: pointer;
+ transition: all .2s ease-in-out;
+ color: black;
+ border-radius: 25px;
+ font-size: 14px;
 }
 
 .video video, .video img {
  width: 80%;
 }
-/* .video1section video {
- display: flex;
- align-items: center;
-} */
 
 .video-wrapper {
  color: #000;
@@ -1066,6 +1125,7 @@ color: #000;
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ margin-bottom: 40px;
 }
 
 .video h2 {
@@ -1096,6 +1156,7 @@ font-weight: bold;
 font-size: 20px;
 padding: 17px 0 0 15px;
 }
+
 .video-back-btn a {
 color: #000;
 }
@@ -1105,25 +1166,18 @@ color: #000;
  margin: 0 auto;
 } 
 
-.iframevideodiv {
- position: relative;
- padding-bottom: 56.25%;
- padding-top: 30px;
- height: 0;
- overflow: hidden;
- margin-left: auto;
- margin-right: auto;
+#vimeomobile {
+ display: block;
 }
 
-.iframevideodiv iframe,
-.iframevideodiv object,
-.iframevideodiv embed {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
+#vimeotablet {
+ display: none;
 }
+
+#vimeodesktop {
+ display: block;
+}
+
 .coachingdiv1 {
 display: flex;
  justify-content: center;
@@ -1452,10 +1506,6 @@ margin-right: 50px;
   }
   /* COMPANY LOGOS */
 
-  .company-logos {
-    padding: 25px 0;
-  }
-
  .smlogo, .bglogo {
   width: 80px;
  }
@@ -1551,7 +1601,7 @@ margin-right: 50px;
    margin-top: 40px;
   }
 
-  .jessbiotext a {
+  .jessbiotext a, .speakingkittext a {
      width: 50%;
     }
 
@@ -1579,6 +1629,18 @@ margin-right: 50px;
     .coachingp1 {
      font-size: 35px;
     }
+
+   #vimeotablet {
+    display: block;
+   }
+
+   #vimeodesktop {
+    display: none;
+   }
+
+   #vimeomobile {
+    display: none;
+   }
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -1587,16 +1649,16 @@ margin-right: 50px;
 @media only screen and (min-width: 1000px) {
   /* General styles */
 
-  .topnav {
-    display: none;
-  }
-
   header {
     display: block;
     padding-top: 0;
   }
 
-  .logo {
+    .topnav a.icon {
+   margin-right: 40px; 
+  }
+
+  .active {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     margin: 0;
@@ -1843,11 +1905,11 @@ margin-right: 50px;
      font-size: 20px;
     }
   
-    .jessbiocontainer {
+    .jessbiocontainer, .speakingkitcontainer {
      padding: 30px 0;
     }
   
-    .jessbio {
+    .jessbio, .speakingkitdiv {
      color: #000;
      display: flex;
      justify-content: space-around;
@@ -1856,32 +1918,31 @@ margin-right: 50px;
      width: 70%;
     }
   
-    .jessbio img {
+    .jessbio img, .speakingkitdiv img {
      margin-right: 100px;
     }
   
-    .jessbiotext {
+    .jessbiotext, .speakingkittext {
      align-self: flex-start;
      width: 60%;
      margin-top: 0;
     }
 
-    .jessbioimgdiv {
+    .jessbioimgdiv, .speakingkitimgdiv {
      width: 40%;
+    }
+     .speakingkitimgdiv img {
+     width: 50%;
     }
 
     .twopagerdiv {
      width: 50%;
     }
 
-   .jessbiotext a {
+   .jessbiotext a, .speakingkittext a {
     display: inline;
     text-align: center;
    }
-  
-    .jessbiop3 {
-     margin-bottom: 40px;
-    }
   
     .twopagerimgs {
      display: flex;
@@ -1939,9 +2000,28 @@ margin-right: 50px;
     .video1, .video2 {
      width: 50%;
     }
-    .video2 {
-     width: 45%;
-    }
+   
+#video-container {
+ height: 75vh;
+}
+
+#watch-now-button button {
+ padding: 20px 25px;
+ border-radius: 25px;
+ font-size: 18px;
+}
+
+#vimeomobile {
+ display: none;
+}
+#vimeotablet {
+ display: none;
+}
+
+#vimeodesktop {
+ display: block;
+}
+
 
   /* .iframevideodiv iframe,
   .iframevideodiv object,
@@ -1980,7 +2060,7 @@ margin-right: 50px;
     margin: 0 auto;
   }
 
-  .logo {
+  a.active {
     font-size: 40px;
     margin-left: 40px;
   }
@@ -2195,6 +2275,7 @@ margin-right: 50px;
   .logo-h2 {
     font-size: 25px;
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .as-seen-in-list li {
@@ -2246,10 +2327,21 @@ margin-right: 50px;
 
   video {
    display: block;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     height: auto;
   }
 
+    #vimeomobile {
+     display: none;
+    }
+  
+    #vimeotablet {
+     display: none;
+    }
+  
+    #vimeodesktop {
+     display: block;
+    }
 
 }
 

@@ -39,13 +39,13 @@
     <!----------------------------------------------------------------- 
                          HEADER 
     ----------------------------------------------------------------->
-    <header>
+    <!-- <header>
       <div class="header-wrapper">
         <div>
           <a href="index.html" class="logo">Jessica Weiss</a>
-        </div>
+        </div> -->
 
-        <div class="navbar">
+        <!-- <div class="navbar">
           <nav>
             <ul>
               <li><a href="index.html" class="home">Home</a></li>
@@ -58,9 +58,10 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-        </div>
-      </div>
-    </header>
+        </div> -->
+        
+      <!-- </div>
+    </header> -->
 
     <!----------------------------------------------------------------- 
                          MOBILE HAMBURGER NAV MENU
@@ -68,13 +69,14 @@
     <div class="topnav">
       <a href="#home" class="active">Jessica Weiss</a>
       <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
+      <div id="myLinks" class="topnavlinks">
+        <a href="index.html" class="home">Home</a>
         <a href="#about">About</a>
-        <a href="#speaking-topics">Speaking</a>
         <a href="videos.html">Videos</a>
-        <a href="media/index.html">Articles</a>
+        <a href="JWSpeakerKit.pdf">Speaking Kit</a>
         <a href="meetingplanners.html">Meeting Planners</a>
         <a href="coaching.html">Coaching</a>
+        <a href="media/index.html">Articles</a>
         <a href="#contact">Contact</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -85,7 +87,7 @@
     <!----------------------------------------------------------------- 
                          HERO 
     ----------------------------------------------------------------->
-    <div class="hero1">
+    <!-- <div class="hero1">
          <div class="herosplit">
         <div class="heroright">
          <img src="img/herotest1.jpeg" alt="">
@@ -97,78 +99,65 @@
             
             <div class="herobuttons">
              <a href="video1.html"><button class="btn hero-btn">See Jessica In Action</button></a>
-             <a href="https://youtu.be/494xjRAoAdY" target="_blank"><button class="btn hero-btn hero-btn2">See Jessica's TEDx Talk</button></a>
+             <a href="https://youtu.be/494xjRAoAdY" target="_blank"><button class="btn hero-btn hero-btn2">See Jessica's TED<span style="text-transform: lowercase;">x</span> Talk</button></a>
             </div>
-            
-           
-           <!-- <a href="form.html"
-            ><button class="btn hero-btn">Book a Free Consultation<br />about speaking at your event</button></a
-          > -->
         </div>
     </div>
-    </div>
+    </div> -->
 
-    <div class="hero-mobile">
+    <!-- <div class="hero-mobile">
          <div class="herosplit">
        
          <div class="heroleft">
           <p>
             Ignite a culture of <span class="herospan1">happiness</span><span class="herospan2"> at</span><span class="herospan1"> work</span>
           </p>
-           <!-- <a href="video1.html"
-            ><button class="btn hero-btn">See Jessica In Action</button></a
-          > -->
+          
            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
              <a href="video1.html"><button class="btn hero-btn">See Jessica In Action</button></a>
-             <a href="https://youtu.be/494xjRAoAdY" target="_blank"><button class="btn hero-btn">See Jessica's TEDx Talk</button></a>
+             <a href="https://youtu.be/494xjRAoAdY" target="_blank"><button class="btn hero-btn">See Jessica's TED<span style="text-transform: lowercase;">x</span> Talk</button></a>
             </div>
-           <!-- <a href="form.html"
-            ><button class="btn hero-btn">Book a Free Consultation<br />about speaking at your event</button></a
-          > -->
+           
         </div>
          <div class="heroright">
          <img src="img/herotest1.jpeg" alt="">
         </div>
     </div>
-    </div>
-
-    <!-- <div class="hero">
-      <div class="hero-content">
-        <div class="hero-content-side2">
-          <p>
-            Ignite a culture of <span class="herospan1">happiness</span><span class="herospan2"> at</span><span class="herospan1"> work</span>
-          </p>
-        </div>
-        <div class="hero-content-side1">
-           <a href="video1.html"
-            ><button class="btn hero-btn">See Jessica In Action</button></a
-          >
-        </div>
-       
-      </div>
     </div> -->
+  <!----------------------------------------------------------------- 
+                         VIDEO
+    ----------------------------------------------------------------->
+     <div id="video-container" style="background-color: black;">
+        <div id="player" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+          <iframe id="vimeodesktop" src="//player.vimeo.com/video/867351395?api=1&amp;background=1"  style="width: 100vw; height: 100%; left: 0px; top: -83.3438px;"></iframe>
+          <iframe id="vimeomobile" src="//player.vimeo.com/video/867351395?api=1&amp;background=1"  style="width: 1050.67px; height: 591px; left: -318.333px; top: 0;"></iframe>
+          <iframe id="vimeotablet" src="//player.vimeo.com/video/867351395?api=1&amp;background=1"  style="width: 1384.89px; height: 779px; left: -282.333px; top: 0;"></iframe>
+        </div>
 
+          <a href="video1.html" id="watch-now-button">
+            <button>See Jessica in Action</button>
+          </a>
+          
+      </div>
+    
     <!----------------------------------------------------------------- 
                          OPENING STATEMENT 
     ----------------------------------------------------------------->
     <main>
       <section class="opening-statement">
-        <!-- <p class="openp1">
-          The <span class="italics">happier</span> and
-          more <span class="italics">engaged</span> your workforce, the more your company will flourish. 
-        </p> -->
         <p class="openp1">
           The <span class="italics">happier</span> and
           more <span class="italics">engaged</span> your workforce, the more your organization will flourish - increased productivity, efficiency and bottom line. 
         </p>
-        <!-- <p class="openp1"></p> -->
+       
         <p class="openp2">Love Your Work, Love Your Life.</p>
-        <!-- <a href="form.html"
-          ><button class="btn opening-statement-btn">
-            Book Jessica to Speak
-          </button></a
-        > -->
       </section>
+      
+         <!-- <video id="autoplay-video" autoplay muted loop>
+           <source src="videos/jessicaweissshort.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+         </video> -->
+        
        <!----------------------------------------------------------------- 
                          ABOUT 
     ----------------------------------------------------------------->
@@ -182,82 +171,18 @@
 all about happiness.</p>
 <p>Jessica Weiss is a speaker and consultant who teaches businesses how to find more happiness, fulfillment, and satisfaction at work. With 15 years of experience working with global brands like Coca-Cola, Johnson & Johnson, and American Express, Jessica is a trusted source for those who are searching for tangible, research-based strategies to create happier workers.</p>
 <p>Jessica Weiss is a <a href="https://youtu.be/494xjRAoAdY" target="_blank" style="color: black;">TEDx speaker</a> and organizational leadership expert who uses her humor and "tell-it-like-it-is" style to teach companies across the country why work can and should be a source of happiness, and how to create spaces where people love to work.</p>
-<!-- <p>Her work brings positive psychology tools and academic research on how to use them, to
-organizations across the United States. In her work, Jessica shares powerful information from
-psychology and neuroscience as well as her own practical experience that shows how
-happiness leads to success in the workplace.</p>
-<p>She has helped thousands of people find more happiness at work and helped leaders and
-executive teams learn how to lead with the tools necessary to drive productivity, engagement
-and performance. Her clients include Johnson &amp; Johnson, Pfizer, Coca Cola, LVMH, Hearst,
-American Express and more.</p> -->
 <p>Jessica is an expert in leadership, culture and organizational development who understands what
 it really takes to unlock engagement. She graduated from the University of Pennsylvania and
 has an MBA from Columbia University.</p>
-              
+              <div class="herobuttons">
+             <a href="video1.html"><button class="btn hero-btn">See Jessica In Action</button></a>
+             <a href="https://youtu.be/494xjRAoAdY" target="_blank"><button class="btn hero-btn hero-btn2">See Jessica's TED<span style="text-transform: lowercase;">x</span> Talk</button></a>
+            </div>
             </div>
           </div>
         <!-- </div> -->
       </section>
-
-  <!----------------------------------------------------------------- 
-                       SPEAKING TOPICS
-        ------------------------------------------------------------------>
-      <!-- <section class="speaking-topics" id="speaking-topics">
-        <div class="speaking-topics-div">
-         <img
-            class="speaking-topics-img-tablet"
-            src="img/tedxclosedeyes.jpeg"
-            alt="self-portrait"
-          />
-          <div class="speaking-topics-div2">
-            <h2>Speaking Topics</h2>
-              <h4>Why Happiness Matters at Work</h4>
-              <p class="italics">Target audience:  supervisory staff through executive leadership</p>
-     <p class="italics">This talk will demonstrate to leaders how to equip their teams with what they need to feel more valued, motivated, and fulfilled at work.  In return, teams will be more engaged and committed, willing to expend more effort to drive overall success for the organization. </p>
-            
-<div class="learning-outcomes">
- <h5>Learning Objectives</h5>
- <ul>
-  <li>Understand 5 Essential Keys for Happiness at Work </li>
-  <li>Uncover the scientific reasons why happiness will make a difference to your bottom line and your team’s engagement
-</li>
-  <li>Learn proven and practical tools that can help any leader help their teams find more happiness and engagement 
-</li>
-
-</div>
-
-            <h4 class="speakingtopic2">Why Individual Happiness Matters at Work
-</h4>
-<p class="italics">Target audience:  individuals at all organizational levels 
-</p>
-           <p class="italics">This talk will demonstrate to all individuals regardless of leadership positions, what they can do to find more personal happiness and fulfillment in their roles.  In return, they will be more productive, creative, and engaged at work.
-</p>
-<div class="learning-outcomes">
-<h5>Learning Objectives</h5>
-<ul>
-<li>Master 3 Key Personal Habits and Tools for Happiness at Work 
-</li>
-<li>Understand how to cultivate social connections, charisma, and friendship in 3 Steps </li>
-<li>Learn the Value of a Plan B – reframe “failure” and use it to actually build confidence </li>
-</ul>
-</div>
-<div class="speaking-topics-closing">Available – in Keynote, full day, and half day workshops.</div>
-
-            
-             <a href="form.html"
-            ><button class="btn keynote-btn">Book Jessica to Speak</button></a
-          >
-          </div>
-         
- <img
-            class="speaking-topics-img"
-            src="img/tedxclosedeyes.jpeg"
-            alt="self-portrait"
-          />
-         
-         
-        </div>
-      </section> -->
+   
   <!----------------------------------------------------------------- 
                        SPEAKING TOPICS
         ------------------------------------------------------------------>
@@ -369,10 +294,10 @@ has an MBA from Columbia University.</p>
             <h3>Coaching</h3>
             <p>One on One Coaching, and custom designed programs for the entire organization</p>
            </div>
-           <div class="work">
+           <!-- <div class="work">
             <h3>Courses</h3>
             <p>Bespoke courses for your organization</p>
-           </div>
+           </div> -->
           
           </div>
          </div>
@@ -386,7 +311,7 @@ has an MBA from Columbia University.</p>
        <!-- <div class="logo-flexbox">
 <div> -->
          <h2 class="logo-h2">Clients</h2>
-        <ul class="company-logo-list company-logo-list1">
+        <!-- <ul class="company-logo-list company-logo-list1">
           <li>
             <img src="img/coke-logo.png" class="smlogo" alt="Coca-Cola logo" />
           </li>
@@ -425,12 +350,13 @@ has an MBA from Columbia University.</p>
           <li><img src="img/lvmh.png" alt="LVMH logo" class="lvmh-logo bglogo" /></li>
           <li><img src="img/kpmg.jpg" class="bglogo" alt="KPMG Logo" /></li>
           
-        </ul>
+        </ul> -->
+        <img src="img/jesslogos.jpg" alt="">
      
        <!-- </div> -->
        
 
-      <div class="as-seen-in">
+      <!-- <div class="as-seen-in">
        <h2 class="logo-h2">Featured In</h2>
        <ul class="as-seen-in-list">
         <li>
@@ -443,7 +369,7 @@ has an MBA from Columbia University.</p>
            <img src="img/newyorkpost.png" class="nytimeslogo" alt="New York Post Logo">
           </li>
        </ul>
-      </div>
+      </div> -->
       </div>
       
        </section>
@@ -510,12 +436,13 @@ has an MBA from Columbia University.</p>
           </div>
         </div>
         <div class="copyright">
-          <span>Copyright 2021 | Jessica Weiss</span>
+          <span>Copyright 2024 | Jessica Weiss</span>
         </div>
       </div>
     </footer>
 
     <script>
+     //mobile hamburger menu
       function myFunction() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
@@ -525,6 +452,7 @@ has an MBA from Columbia University.</p>
         }
       }
 
+      //is this still being used??
       var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -539,6 +467,22 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
     </script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+<script>
+  var options = {
+    url: "https://player.vimeo.com/video/867351395",
+    width: 100
+  };
+
+  var videoPlayer = new Vimeo.Player('player', options);
+
+  videoPlayer.on('play', function() {
+    console.log('Played the video');
+  });
+</script>
   </body>
 </html>
