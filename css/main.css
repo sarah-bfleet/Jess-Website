@@ -433,10 +433,11 @@ Hero Section
  background-color: #000;
  /* background: rgb(103, 102, 117);
   background: linear-gradient(90deg, rgba(103, 102, 117, 1) 0%, rgba(82, 81, 93, 1) 35%); */
+  background-color: #eaeaea;
   color: #F8F8F8;
+  color: #000;
   padding: 20px 0 5px;
- 
-  /* background-color: #f7f7f7; */
+
 }
 
 .speakingtopicsmain p {
@@ -486,9 +487,9 @@ display: inline;
  margin: 30px;
 }
 
-.speakingtopicsheaderdiv {
+/* .speakingtopicsheaderdiv {
   color: #fdd923;
-}
+} */
 
 .speakingtopicsheaderdiv h4 {
  display: block;
@@ -610,10 +611,13 @@ display: inline;
   background-color: gray;
 }
 
-.smlogo, .bglogo {
+.smlogo {
  width: 50px;
 }
 
+.bologo {
+ width: 70px;
+}
 .as-seen-in {
   color: #000;
   text-align: center;
@@ -1512,8 +1516,8 @@ margin-right: 50px;
   }
   /* COMPANY LOGOS */
 
- .smlogo, .bglogo {
-  width: 80px;
+ .smlogo {
+  width: 100px;
  }
 
   .amex-desktop::before {
@@ -1679,8 +1683,8 @@ margin-right: 50px;
    margin: 0;
   }
 
-  .bglogo {
-   width: 100px;
+  .hasbro-logo, .pfizer-logo, .kpmg {
+   width: 160px;
   }
 
    .nytimeslogo {
@@ -1792,11 +1796,8 @@ margin-right: 50px;
     }
   
  .company-logo-list {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-evenly; */
-  justify-content: center;
-  margin: 25px 50px;
+  
+  margin: 0 50px;
   text-align: center;
  }
 
@@ -2186,7 +2187,7 @@ margin-right: 50px;
 
   h3.keynote {
    font-size: 28px;
-   color: #fff;
+   /* color: #fff; */
    text-transform: capitalize;
   }
 
@@ -2289,7 +2290,7 @@ margin-right: 50px;
 
   .logo-flexbox {
    display: flex;
-   align-items: center;
+   
   }
 
   .logo-h2 {
