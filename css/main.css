@@ -390,7 +390,7 @@ Hero Section
   border: none;
 }
 .keynote-speaker {
- background-color: #f7f7f7
+ background-color: #fff;
 }
 
 .keynote-speaker-div {
@@ -685,7 +685,7 @@ display: inline;
   color: #000;
   text-align: center;
   padding: 20px 0 60px;
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
 }
 
 .work {
@@ -1013,6 +1013,7 @@ padding: 30px 0;
  display: block;
  text-align: center;
  margin-bottom: 10px;
+ margin-top: 15px;
 }
 
 .jessbio img, .speakingkitdiv img {
@@ -1461,11 +1462,6 @@ margin-right: 50px;
   .opening-statement-btn {
    margin-top: 0;
    margin-bottom: 10px;
-  }
-
-  .openp1, .openp2 {
-   font-size: 30px;
-   width: 70%;
   }
   
   .keynote-speaker {
@@ -2109,14 +2105,10 @@ margin-right: 50px;
   .heroright {
    width: 50%;
   }
+  
   .heroright img {
  width: 800px;
-   
   }
-  /* .heroright img {
-  
-   border-radius: 50%;
-  } */
 
   .hero-content {
     padding-top: 130px;
@@ -2139,19 +2131,14 @@ margin-right: 50px;
    color: #fdd923;
   }
 
-
   .opening-statement p {
     font-size: 35px;
   }
 
-  .openp2 {
-    font-size: 55px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
+    .openp1 {
+     font-size: 30px;
+     width: 80%;
+    }
 
   /* KEYNOTE SPEAKER & SPEAKING TOPICS */
 
@@ -2203,24 +2190,6 @@ margin-right: 50px;
    width: 100%;
   }
 
-  /* .speaking-topics-div {
-   width: 50%;
-  } */
-
-  /* .speaking-topics-div {
-    margin: 0 0 0 20px;
-    padding: 30px 0 0 20px;
-     width: 100%;
-  } */
-
-  /* .speakingtopic2 {
-   margin-top: 50px;
-  } */
-
-  /* .speakingtopic1 p {
-   line-height: 30px;
-  } */
-
   .learning-outcomes ul {
    line-height: 32px;
   }
@@ -2238,14 +2207,6 @@ margin-right: 50px;
   .learning-outcomes {
     margin: 10px 0 30px;
   }
-
-  /* .learning-outcomes h5 {
-    margin-top: 40px;
-  } */
-
-  /* .speakingtopic2 {
-   margin-top: 60px;
-  } */
 
   .learning-outcomes li {
     font-size: 16px;
@@ -2411,10 +2372,13 @@ margin-right: 50px;
    padding: 30px;
   }
 
-      .about-text {
-      
-       margin-left: 90px;
-      }
+  .openp1 {
+   width: 70%;
+  } 
+
+.about-text {
+ margin-left: 90px;
+}
 }
 
 /* ==========================================================================
