@@ -430,11 +430,7 @@ Hero Section
 }
 
 .speaking-topics {
- background-color: #000;
- /* background: rgb(103, 102, 117);
-  background: linear-gradient(90deg, rgba(103, 102, 117, 1) 0%, rgba(82, 81, 93, 1) 35%); */
-  background-color: #eaeaea;
-  color: #F8F8F8;
+ 
   color: #000;
   padding: 20px 0 5px;
 
@@ -1095,7 +1091,7 @@ color: #000;
 
 #watch-now-button {
  position: absolute;
- top: 50%;
+ top: 62%;
  left: 50%;
  transform: translate(-50%, -50%);
  z-index: 2;
@@ -1561,7 +1557,7 @@ margin-right: 50px;
   }
 
   .contact-email a {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .contact-email {
@@ -1782,12 +1778,12 @@ margin-right: 50px;
     margin-top: 0;
   }
 
-  .speaking-topics li,  .speaking-topics p {
+  .speaking-topics li {
     font-size: 16px;
   }
 
-  .speaking-topics-closing  {
-     font-size: 20px;
+  .speaking-topics-closing {
+     font-size: 22px;
      font-style: italic;
     }
   
@@ -2011,7 +2007,7 @@ margin-right: 50px;
 #watch-now-button button {
  padding: 20px 25px;
  border-radius: 25px;
- font-size: 18px;
+ font-size: 22px;
 }
 
 #vimeomobile {
