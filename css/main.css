@@ -162,10 +162,6 @@ nav ul li {
   margin: 0 15px;
 }
 
-header {
-  display: none;
-}
-
 .logo {
   font-weight: 900;
 }
@@ -359,6 +355,8 @@ Hero Section
 
 .openp1 {
  margin: 0 12px;
+  font-weight: 400;
+   line-height: 1.7;
 }
 
 .openp1, .openp2 {
@@ -1034,7 +1032,7 @@ a.downloadbtn {
  border-radius: 30px;
  color: #000;
  font-weight: bold;
- width: 60%;
+ width: 80%;
 }
 
 .mtgplannerssection2 {
@@ -1091,7 +1089,7 @@ color: #000;
 
 #watch-now-button {
  position: absolute;
- top: 62%;
+ top: 68%;
  left: 50%;
  transform: translate(-50%, -50%);
  z-index: 2;
@@ -2132,8 +2130,10 @@ margin-right: 50px;
   }
 
     .openp1 {
-     font-size: 30px;
+     font-style: normal;
+     font-size: 35px;
      width: 80%;
+    
     }
 
   /* KEYNOTE SPEAKER & SPEAKING TOPICS */
