@@ -687,6 +687,7 @@ display: inline;
   color: #fff;
   padding: 35px 25px;
   border: 5px solid #fdd923;
+  border: 3px solid #FDC500;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -995,7 +996,7 @@ padding: 30px 0;
 
 .jessbiotext, .speakingkittext {
  max-width: 80%;
- margin: 40px auto 0;
+ margin: 40px 25px 0;
 }
 
 .flexdiv2
@@ -1013,6 +1014,11 @@ padding: 30px 0;
 .jessbio img, .speakingkitdiv img {
  display: block;
  margin: 0 auto;
+}
+
+.jessbioimgdiv {
+ width: 75%;
+margin: 0 auto;
 }
 
 .twopagerimgs {
@@ -1115,8 +1121,13 @@ color: #000;
 .video-wrapper {
  color: #000;
  background-color: #f7f7f7;
- padding: 60px 0 100px;
+ padding: 60px 0 70px;
 }
+/* .video-wrapper {
+ color: #000;
+ background-color: #f7f7f7;
+ padding: 60px 0 100px;
+} */
 
 .videorow1 {
  display: flex;
@@ -1197,6 +1208,26 @@ display: flex;
  margin: 0 15px;
  padding-bottom: 100px;
  
+}
+
+.video-div {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.video-thumbnail {
+ width: 80%;
+ margin: 35px;
+}
+
+.left-side {
+ margin-top: 50px;
+}
+
+.right-side img {
+ width: 85%;
+ margin: 70px 0 50px;
 }
 /*----------------------alternates-----------------------------------------*/
 .twopagerimgstwo img {
@@ -1499,11 +1530,10 @@ margin-right: 50px;
    margin: 0 5px;
   }
 
-  .work-with-div {
+  /* .work-with-div {
     display: flex;
-    
     align-items: center;
-  }
+  } */
   /* COMPANY LOGOS */
 
  .smlogo {
@@ -1641,6 +1671,40 @@ margin-right: 50px;
    #vimeomobile {
     display: none;
    }
+
+  .jessbioimgdiv {
+   width: 65%;
+   margin: 0 auto;
+  }
+
+  .speakingkitdiv img {
+   width: 45%;
+  }
+
+  .speakingkitdiv {
+   margin-top: 0;
+  }
+
+  .speakingkitcontainer {
+   padding: 0;
+  }
+
+  .video-thumbnail {
+   width: 50%;
+   margin: 75px;
+  }
+
+  .left-side {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+ 
+  }
+
+  .right-side img {
+   margin: 100px 0 70px;
+  }
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -1803,6 +1867,7 @@ margin-right: 50px;
     width: 100px;
   } */
 
+
   .about .content-wrapper {
     display: flex;
     align-items: flex-start;
@@ -1830,6 +1895,8 @@ margin-right: 50px;
   }
 
  .work-with-div {
+  display: flex;
+   align-items: center;
   margin: 0 20px;
   justify-content: center;
   flex-direction: row;
@@ -1909,10 +1976,11 @@ margin-right: 50px;
     .jessbio, .speakingkitdiv {
      color: #000;
      display: flex;
+     /* margin: 50px auto; */
+     width: 100%;
+     align-items: center;
      justify-content: space-around;
-     align-items: flex-start;
-     margin: 50px auto;
-     width: 70%;
+     padding: 70px 0;
     }
   
     .jessbio img, .speakingkitdiv img {
@@ -1921,15 +1989,27 @@ margin-right: 50px;
   
     .jessbiotext, .speakingkittext {
      align-self: flex-start;
-     width: 60%;
+     width: 40%;
      margin-top: 0;
     }
 
-    .jessbioimgdiv, .speakingkitimgdiv {
-     width: 40%;
+    .jessbioimgdiv {
+     width: 30%;
+     margin: 0 100px 0 0;
+
     }
-     .speakingkitimgdiv img {
+    
+    /* .speakingkitimgdiv{
+     
      width: 50%;
+     
+    } */
+     .speakingkitimgdiv img {
+     width: 75%;
+     display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-left: 65px;
     }
 
     .twopagerdiv {
@@ -1968,6 +2048,7 @@ margin-right: 50px;
   
     a.downloadbtn {
      background-color: #fdd923;
+    background-color: #FEC601;
      text-transform: uppercase;
      padding: 20px;
      border-radius: 30px;
@@ -1976,6 +2057,9 @@ margin-right: 50px;
      width: 40%;
     }
   
+    .mtg-planners-section {
+     margin: 75px 150px;
+    }
     .mtgplannerssection2 {
      display: flex;
      justify-content: space-between;
@@ -1983,6 +2067,16 @@ margin-right: 50px;
      max-width: 80%;
      color: #000;
     }
+
+    .speaking-kit-img {
+     width: 40%;
+    
+    }
+
+    /* .speaking-kit-img a {
+     width: 40%;
+     
+    } */
 
     .video1sectiondiv {
      width: 80%;
@@ -2018,7 +2112,6 @@ margin-right: 50px;
 #vimeodesktop {
  display: block;
 }
-
 
   /* .iframevideodiv iframe,
   .iframevideodiv object,
@@ -2218,16 +2311,34 @@ margin-right: 50px;
   }
 
   .work-with-div {
+   
     margin: 0 70px;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
+    padding: 30px 0;
   }
+.left-side {
+ flex-direction: column;
+ 
+ align-items: center;
+ margin-top: 0;
+}
 
+.right-side {
+width: 50%;
+ margin: 0 80px 0 0;
+}
+
+.right-side img 
+  {
+   margin: 0;
+  }
   .work {
-    width: 15%;
+    width: 30%;
     /* height: 120px; */
     padding: 25px;
-    margin: 0 30px;
+    margin-top: 15px;
   }
   /* ABOUT */
 /* 
