@@ -438,10 +438,6 @@ Hero Section
  line-height: 1.6;
 }
 
-/* .speakingtopicsmain {
- font-family: 'Montserrat', sans-serif;
-} */
-
 .speaking-topics h2 {
   margin-bottom: 20px;
 }
@@ -451,15 +447,6 @@ Hero Section
   margin: 0 0 30px;
   font-size: 22px;
 }
-
-/* .speaking-topics h4 {
-padding: 10px 15px;
-border-radius: 25px;
-color: black;
-background: rgb(253, 217, 35);
- background: radial-gradient(circle, rgba(253, 217, 35, 1) 0%, rgba(253, 217, 35, 1) 100%);
-display: inline;
-} */
 
 .speaking-topics-div2 {
   margin: 0 22px 25px;
@@ -678,8 +665,14 @@ display: inline;
 .work-with {
   color: #000;
   text-align: center;
-  padding: 20px 0 60px;
+  padding: 10px 0 20px;
   background-color: #f7f7f7;
+  
+}
+
+.work-wth h2 {
+ font-weight: 500;
+ 
 }
 
 .work {
@@ -700,6 +693,19 @@ display: inline;
   text-transform: capitalize;
 }
 
+  .work-with-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 80%;
+   margin: 0 auto;
+  }
+
+    .right-side-img {
+     margin-bottom: 40px;
+     margin-top: 20px;
+    }
 /********************************************
                    FOOTER
 *********************************************/
@@ -713,7 +719,7 @@ footer {
 
 .contact p {
   color: white;
-  margin: 0 10px;
+  margin: 15px 0;
   font-size: 16px;
 }
 
@@ -750,6 +756,19 @@ footer a:hover {
 
 .contact-email {
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-email-speaking-page {
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.agency-name {
+ font-weight: bold;
+ margin-top: 30px;
 }
 
 .contact-email a {
@@ -849,7 +868,6 @@ article {
 }
 
 article h2 {
-  font-family: "Playfair Display";
   font-weight: normal;
   font-size: 20px;
   text-align: center;
@@ -1221,13 +1239,10 @@ display: flex;
  margin: 35px;
 }
 
-.left-side {
- margin-top: 50px;
-}
-
-.right-side img {
- width: 85%;
- margin: 70px 0 50px;
+.speaking-page-mgr-info {
+ font-size: 16px;
+ color: black;
+ margin-bottom: 15px;
 }
 /*----------------------alternates-----------------------------------------*/
 .twopagerimgstwo img {
@@ -1525,7 +1540,7 @@ margin-right: 50px;
   }
 
   .work {
-   width: 30%;
+   width: 50%;
    height: 150px;
    margin: 0 5px;
   }
@@ -1585,11 +1600,12 @@ margin-right: 50px;
   }
 
   .contact-email a {
-    font-size: 30px;
+    font-size: 22px;
+    margin-bottom: 18px;
   }
 
   .contact-email {
-    margin: 50px 0 30px;
+    margin-bottom:  30px;
   }
 
   #contact {
@@ -1598,8 +1614,8 @@ margin-right: 50px;
 
   .contact p {
     color: white;
-    margin: 0 10px;
-    font-size: 28px;
+    margin: 18px 0;
+    font-size: 22px;
   }
 
   /*---------------------------
@@ -1648,6 +1664,7 @@ margin-right: 50px;
      text-align: center;
     } */
 
+  
     a.downloadbtn {
      width: 40%;
     }
@@ -1694,17 +1711,7 @@ margin-right: 50px;
    margin: 75px;
   }
 
-  .left-side {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
- 
-  }
 
-  .right-side img {
-   margin: 100px 0 70px;
-  }
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -1894,13 +1901,12 @@ margin-right: 50px;
     margin: 0;
   }
 
- .work-with-div {
+ .left-side {
   display: flex;
-   align-items: center;
-  margin: 0 20px;
-  justify-content: center;
-  flex-direction: row;
+ justify-content: space-around;
  }
+
+ 
 
   /*BLOG PAGE*/
 
@@ -1976,11 +1982,10 @@ margin-right: 50px;
     .jessbio, .speakingkitdiv {
      color: #000;
      display: flex;
-     /* margin: 50px auto; */
-     width: 100%;
      align-items: center;
      justify-content: space-around;
-     padding: 70px 0;
+     margin: 40px auto;
+     width: 70%;
     }
   
     .jessbio img, .speakingkitdiv img {
@@ -1994,22 +1999,22 @@ margin-right: 50px;
     }
 
     .jessbioimgdiv {
-     width: 30%;
+     width: 40%;
      margin: 0 100px 0 0;
-
     }
     
+  
     /* .speakingkitimgdiv{
      
      width: 50%;
      
     } */
      .speakingkitimgdiv img {
-     width: 75%;
+     width: 65%;
      display: flex;
       justify-content: center;
       align-self: center;
-      margin-left: 65px;
+      margin-left: 45px;
     }
 
     .twopagerdiv {
@@ -2046,6 +2051,12 @@ margin-right: 50px;
      width: 300px;
     }
   
+    .jess_bio_links {
+     display: flex;
+     flex-direction: column;
+    
+    }
+
     a.downloadbtn {
      background-color: #fdd923;
     background-color: #FEC601;
@@ -2054,11 +2065,16 @@ margin-right: 50px;
      border-radius: 30px;
      color: #000;
      font-weight: bold;
-     width: 40%;
+     text-align: center;
+     display: block;
+    width: 70%;
+     margin-bottom: 15px;
+    
     }
   
     .mtg-planners-section {
-     margin: 75px 150px;
+   
+     width: 100%
     }
     .mtgplannerssection2 {
      display: flex;
@@ -2113,16 +2129,10 @@ margin-right: 50px;
  display: block;
 }
 
-  /* .iframevideodiv iframe,
-  .iframevideodiv object,
-  .iframevideodiv embed {
-     top: 30%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-    
-   width: 40%;
-   height: 40%;
-  } */
+.speaking-page-mgr-info {
+ font-size: 18px;
+}
+
 }
 /* ================================================================
       LAPTOP MEDIA QUERY
@@ -2222,12 +2232,12 @@ margin-right: 50px;
     font-size: 35px;
   }
 
-    .openp1 {
-     font-style: normal;
-     font-size: 35px;
-     width: 80%;
-    
-    }
+  .openp1 {
+   font-style: normal;
+   font-size: 35px;
+   width: 80%;
+  
+  }
 
   /* KEYNOTE SPEAKER & SPEAKING TOPICS */
 
@@ -2303,7 +2313,7 @@ margin-right: 50px;
   }
 
   .work-with {
-    padding: 15px 0 45px;
+    padding: 15px 0;
   }
 
   .work-with h2 {
@@ -2311,40 +2321,14 @@ margin-right: 50px;
   }
 
   .work-with-div {
-   
-    margin: 0 70px;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px 0;
+    margin: 0 auto;
+    padding: 30px 0 60px;
   }
-.left-side {
- flex-direction: column;
- 
- align-items: center;
- margin-top: 0;
-}
 
-.right-side {
-width: 50%;
- margin: 0 80px 0 0;
-}
 
-.right-side img 
-  {
-   margin: 0;
+  .right-side-img {
+   width: 40%;
   }
-  .work {
-    width: 30%;
-    /* height: 120px; */
-    padding: 25px;
-    margin-top: 15px;
-  }
-  /* ABOUT */
-/* 
-  .about .content-wrapper {
-    justify-content: center;
-  } */
 
   .about-text {
    line-height: 1.6;
@@ -2403,7 +2387,7 @@ width: 50%;
   }
 
   .follow {
-    margin-left: 120px;
+    margin-top: 50px;
   }
 
   .contact-email {
@@ -2431,6 +2415,14 @@ width: 50%;
     #vimeodesktop {
      display: block;
     }
+
+  a.downloadbtn {
+   width: 60%;
+  }
+
+ .contact {
+  text-align: left;
+ }
 
 }
 
@@ -2486,6 +2478,24 @@ width: 50%;
 .about-text {
  margin-left: 90px;
 }
+
+.speakingkitimgdiv img {
+width: 75%;
+display: flex;
+justify-content: center;
+align-self: center;
+margin-left: 55px;
+}
+
+.jessbioimgdiv {
+  width: 30%;
+  }
+
+
+.mgr-agency {
+  color: #fdd923;
+}
+
 }
 
 /* ==========================================================================
